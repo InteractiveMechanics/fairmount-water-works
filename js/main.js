@@ -3,6 +3,18 @@ $(window).load(function(){
     });
 
 
+// page reload 
+$('.magic-button').mousedown(function(e) {
+    clearTimeout(this.downTimer);
+    this.downTimer = setTimeout(function() {
+        // alert('mousedown > 3 sec');
+        location.reload();   
+    }, 3000);
+}).mouseup(function(e) {
+    clearTimeout(this.downTimer);
+});
+
+
 
 
 //////////////////////////////////
