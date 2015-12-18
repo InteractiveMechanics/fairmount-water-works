@@ -1,6 +1,25 @@
+
+//modal displays on load, but completion modal is hidden
 $(window).load(function(){
         $('#myModal').modal('show');
+        $('.modal-content-completion').hide();
+
     });
+
+
+// on click, button changes from red to green, if all buttons are green, completion modal displays
+$(function(){
+	$('.game-btn').click(function(event) {
+		$(this).addClass('game-btn-complete');
+		$(this).removeClass('game-btn-waiting');
+		event.preventDefault();
+		if (!$('.game-btn').not('.game-btn-complete').length) {
+			$('#myModal').modal('show');
+    		$('.modal-content-intro').hide();
+    		$('.modal-content-completion').show();	
+		}
+	});
+});
 
 
 // invisibile page reload 

@@ -6,7 +6,7 @@ a {
   a:hover {
     text-decoration: none; }
 
-.modal-content-intro {
+.modal-content-intro, .modal-content-completion {
   text-align: center;
   background-color: rgba(100, 100, 100, 0.5);
   color: #f1f2f2; }
@@ -23,7 +23,8 @@ a {
 .magic-button {
   position: absolute;
   top: 0;
-  right: 0; }
+  right: 0;
+  z-index: 1500; }
 
 .game-btn {
   height: 55px;
@@ -35,10 +36,20 @@ a {
   align-items: center;
   justify-content: center;
   position: absolute; }
-  .game-btn:hover {
+
+.game-btn-waiting {
+  background-color: red; }
+  .game-btn-waiting:hover {
     background-color: white;
     color: #ff6666;
     border: 2px solid red; }
+
+.game-btn-complete {
+  background-color: green; }
+  .game-btn-complete:hover {
+    background-color: white;
+    color: green;
+    border: 2px solid green; }
 
 .btn-1 {
   top: 56;
