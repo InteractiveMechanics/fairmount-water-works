@@ -1,0 +1,54 @@
+
+.map-container {
+	position: relative;
+}
+
+.magic-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+// map buttons
+.game-btn {
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+	background-color: red;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	&:hover {
+		background-color: white;
+		color: #ff6666;
+		border: 2px solid red;
+	}
+}
+
+.btn-1 {
+	top: 56;
+	right: 115;
+}
+
+.btn-2 {
+	top: 75;
+	right: 300;
+}
+
+.btn-3 {
+	top: 185;
+	right: 475;
+}
+
+.btn-4 {
+	top: 200;
+	left: 400;
+}
+
+.btn-5 {
+	top: 175;
+	left: 200;
+}

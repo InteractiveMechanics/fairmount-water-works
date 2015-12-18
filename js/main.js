@@ -3,7 +3,7 @@ $(window).load(function(){
     });
 
 
-// page reload 
+// invisibile page reload 
 $('.magic-button').mousedown(function(e) {
     clearTimeout(this.downTimer);
     this.downTimer = setTimeout(function() {

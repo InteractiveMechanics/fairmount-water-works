@@ -1,6 +1,11 @@
 section {
   padding: 60px 0; }
 
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
 .modal-content-intro {
   text-align: center;
   background-color: rgba(100, 100, 100, 0.5);
@@ -11,5 +16,48 @@ section {
 
 .modal-lg {
   width: 975px; }
+
+.map-container {
+  position: relative; }
+
+.magic-button {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.game-btn {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; }
+  .game-btn:hover {
+    background-color: white;
+    color: #ff6666;
+    border: 2px solid red; }
+
+.btn-1 {
+  top: 56;
+  right: 115; }
+
+.btn-2 {
+  top: 75;
+  right: 300; }
+
+.btn-3 {
+  top: 185;
+  right: 475; }
+
+.btn-4 {
+  top: 200;
+  left: 400; }
+
+.btn-5 {
+  top: 175;
+  left: 200; }
 
 /*# sourceMappingURL=main.css.map */
