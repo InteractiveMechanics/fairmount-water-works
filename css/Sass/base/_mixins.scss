@@ -1,0 +1,18 @@
+@mixin game-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 10px;
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	h1 {
+		padding-left: 20px;
+		display: inline-block;
+	}
+	p {
+		padding-left: 77px;
+	}
+}
+

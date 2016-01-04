@@ -6,6 +6,22 @@ a {
   a:hover {
     text-decoration: none; }
 
+.page-icon {
+  height: 55px;
+  width: 55px;
+  background-color: #777777;
+  border-radius: 50%;
+  display: inline-block; }
+
+.right-arrow {
+  width: 20px; }
+
+.game-footer {
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 8px 14px;
+  border: 1px solid black; }
+
 .modal-content-intro, .modal-content-completion {
   text-align: center;
   background-color: rgba(100, 100, 100, 0.5);
@@ -75,5 +91,33 @@ a {
 .btn-5 {
   top: 220;
   left: 200; }
+
+.crossword-container {
+  position: relative;
+  background-image: url(../img/activity-01-background@2x.jpg);
+  background-size: 1024px 768px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.crossword-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+  .crossword-header h1 {
+    padding-left: 20px;
+    display: inline-block; }
+  .crossword-header p {
+    padding-left: 77px; }
+
+.crossword-footer {
+  position: absolute;
+  bottom: 50px;
+  right: 75px; }
 
 /*# sourceMappingURL=main.css.map */

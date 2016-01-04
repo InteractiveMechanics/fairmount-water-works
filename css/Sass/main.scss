@@ -1,7 +1,7 @@
 @import "base/variables";
+@import "base/mixins";
 @import "base/helpers";
 @import "base/typography";
-@import "base/mixins";
 
 @import "components/layout";
 @import "components/header";
@@ -9,3 +9,4 @@
 @import "components/modal";
 
 @import "pages/index";
+@import "pages/crossword";

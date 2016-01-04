@@ -12,11 +12,12 @@ $(function(){
 	$('.game-btn').click(function(event) {
 		$(this).addClass('game-btn-complete');
 		$(this).removeClass('game-btn-waiting');
-		event.preventDefault();
+		//event.preventDefault();
 		if (!$('.game-btn').not('.game-btn-complete').length) {
 			$('#myModal').modal('show');
     		$('.modal-content-intro').hide();
-    		$('.modal-content-completion').show();	
+    		$('.modal-content-completion').show();
+            event.preventDefault();	
 		}
 	});
 });
@@ -32,6 +33,8 @@ $('.magic-button').mousedown(function(e) {
 }).mouseup(function(e) {
     clearTimeout(this.downTimer);
 });
+
+
 
 
 
