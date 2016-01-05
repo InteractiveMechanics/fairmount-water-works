@@ -3,8 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<title>Crossword | Fairmount Water Works</title>
 
 	<!-- stylesheets -->
@@ -21,7 +23,54 @@
 		<h1>Water &amp; Land</h1>
 		<p>Tap on a number to fill in the column or row.</p>
 	</header>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg crosswordModal" data-toggle="modal" data-target="#crosswordModal">
+  Testing modal
+</button>
+
 </div>
+
+
+
+<!--Trivia Modal -->
+<div class="modal fade bs-example-modal-lg" id="crosswordModal" tabindex="-1" role="dialog" aria-labelledby="crosswordModallLabel">
+  <div class="modal-dialog modal-lg modal-trivia-dialog">
+    <div class="modal-content modal-trivia-content">
+    	<div class="row">
+    	<div class="col-sm-4 col-sm-offset-4">
+    		<h1 class="clueNumber">#1</h1>
+    		<p class="question">The cutting down of too many trees in the Schuykill River Watershed led to the  1869 _ _ _ _</p>
+    		<ul class="options">
+    			<li><button type="button" class="btn btn-default modal-trivia-button">War</button></li>
+    			<li><button type="button" class="btn btn-default modal-trivia-button">Flood</button></li>
+    			<li><button type="button" class="btn btn-default modal-trivia-button">Drought</button></li>
+    			<li><button type="button" class="btn btn-default modal-trivia-button">Storm</button></li>
+    		</ul>
+    		 <button type="button" class="btn btn-default modal-trivia-next-button" data-dismiss="modal">Next
+    		 <svg version="1.1" id="right-arrow" class="right-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="-21 26.7 21.6 12.3" enable-background="new -21 26.7 21.6 12.3" xml:space="preserve">
+			<g>
+				<g>
+					<rect x="-21" y="32.1" width="19.9" height="1.5"/>
+				</g>
+				<g>
+					<g>
+						<polygon points="-6,39 -7.1,37.9 -1.6,32.8 -7.1,27.8 -6,26.7 0.6,32.8 			"/>
+					</g>
+				</g>
+			</g>
+		</svg>
+    		 </button>
+    	</div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
 
 <footer class="crossword-footer">

@@ -4,6 +4,7 @@ section {
 
 a {
 	text-decoration: none;
+	color: $black;
 	&:hover {
 		text-decoration: none;
 	}
@@ -20,3 +21,4 @@ a {
 .right-arrow {
 	width: 20px;
 }
+
