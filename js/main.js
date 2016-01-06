@@ -34,27 +34,20 @@ $('.magic-button').mousedown(function(e) {
     clearTimeout(this.downTimer);
 });
 
-// prevents links from opening in Safari 
-$( document ).on(
-    "click",
-    "a",
-    function( event ){
 
-        // Stop the default behavior of the browser, which
-        // is to change the URL of the page.
-        event.preventDefault();
+// tooltip shows on page load
+$('[data-toggle=tooltip]').tooltip({trigger: 'click'}).tooltip('show');
 
-        // Manually change the location of the page to stay in
-        // "Standalone" mode and change the URL at the same time.
-        location.href = $( event.target ).attr( "href" );
+// crossword modal shows when user clicks on tooltip
+$('[role=tooltip]').click(function() {
+    $(this).attr('data-toggle', 'modal').attr('data-target', '#crosswordModal');
+})
 
-    }
-);
+// crossword answer visible when next button clicked
 
-
-
-
-
+$('.modal-trivia-next-button').click(function() {
+    $('.crossword-clue-container').removeClass('crossword-clue-hidden');
+})
 
 
 //////////////////////////////////
