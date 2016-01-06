@@ -16,3 +16,8 @@
 	}
 }
 
+@mixin crossword-letter {
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+}

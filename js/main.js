@@ -44,7 +44,6 @@ $('[role=tooltip]').click(function() {
 })
 
 // crossword answer visible when next button clicked
-
 $('.modal-trivia-next-button').click(function() {
     $('.crossword-clue-container').removeClass('crossword-clue-hidden');
 })

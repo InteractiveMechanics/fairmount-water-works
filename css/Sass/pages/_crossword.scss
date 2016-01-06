@@ -19,36 +19,46 @@
 
 
 .crosswordModal {
-	position: absolute;
-	top: 200;
-	left: 200;
+	// position: absolute;
+	// top: 200;
+	// left: 200;
 }
 
 .crossword-clue-1 {
-	position: absolute;
-	top: 450;
-	left: 450;
-}
-
-.crossword-clue {
-	width: 24px;
-	// font-size: 24px;
-	// padding: 10px;
-	// text-transform: uppercase;
 	position: absolute;
 	top: 102px;
 	right: 314px;
 }
 
-.crossword-letter {
-	font-size: 24px;
+.crossword-clue-2 {
+	position: absolute;
+	top: 150px;
+	right: 135px;
+}
+
+.crossword-down {
+	width: 24px;
+}
+
+.crossword-letter-across {
+	@include crossword-letter;
+	display: inline;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 4px;
+	margin-right: 10px;
+
+}
+
+.crossword-letter-down {
+	@include crossword-letter;
 	padding-top: 0;
-	text-align: center;
 	padding-bottom: 0;
 	margin-top: 4px;
 	margin-bottom: 10px;
-	text-transform: uppercase;
 }
+
+
 
 .crossword-clue-hidden {
 	visibility: hidden;
@@ -60,5 +70,4 @@
 
 .tooltip {
 	font-size: 18px;
-	color: red;
 }
