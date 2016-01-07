@@ -38,15 +38,56 @@ $('.magic-button').mousedown(function(e) {
 // tooltip shows on page load
 $('[data-toggle=tooltip]').tooltip({trigger: 'click'}).tooltip('show');
 
-// crossword modal shows when user clicks on tooltip
+//crossword modal shows when user clicks on tooltip
 $('[role=tooltip]').click(function() {
+    var clue = $(this)[0].textContent;
+    // console.log($(th));
+    $('.modal-content').html($('.clue-' + clue).html());
     $(this).attr('data-toggle', 'modal').attr('data-target', '#crosswordModal');
 })
 
-// crossword answer visible when next button clicked
+//crossword answer visible when next button clicked
 $('.modal-trivia-next-button').click(function() {
     $('.crossword-clue-container').removeClass('crossword-clue-hidden');
 })
+
+
+// handlebars
+$(function () {
+  var raw_template = $('#trivia-template').html();   
+  var template = Handlebars.compile(raw_template);
+  var placeHolder = $(".modal-data");
+
+  $.get("../data/crossword.json",function(data,status,xhr){
+        $.each(data,function(index,element){
+            console.log(data);
+          // Generate the HTML for each post
+          var html = template(data);
+          // Render the posts into the page
+          placeHolder.append(html);
+        });
+      });
+ 
+
+ 
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //////////////////////////////////

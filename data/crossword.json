@@ -1,72 +1,68 @@
-{ "type": "FeatureCollection",
-
-	"features": [
+{ "trivia": [
 
 		{
-			"type": "Feature",
+			
 			"clueNumber": 1,
 			"question": "The cutting down of too many trees in the Schuykill River Watershed led to the  1869 _____",
 			"options": ["war", "flood", "draught", "storm"],
 			"answer": "flood"
 		},
 		{
-			"type": "Feature",
+			
 			"clueNumber": 2,
 			"question": "The Schuykill River Watershed is part of this larger River Basin.",
 			"options": ["Mississippi", "Missouri", "Delaware", "Nile"],
 			"answer": "Delaware"
 		},
 		{
-			"type": "Feature",
+			
 			"clueNumber": 3,
 			"question": "Twice a day the river levels are high and low because of these.",
 			"options": ["boats", "tides", "wells", "fossil fuels"],
 			"answer": "tides"
 		},
 		{
-			"type": "Feature",
+			
 			"clueNumber": 5,
 			"question": "This park helps protect the city's water supply.",
 			"options": ["Rittenhouse", "Clark", "Franklin", "Fairmount"],
 			"answer": "Fairmount"
 		},
 		{
-			"type": "Feature",
+			
 			"clueNumber": 6,
 			"question": "The ______ of a stream is all the land that sheds water to that stream when it rains.",
 			"options": ["habitat", "watershed", "environment", "tributary"],
 			"answer": "watershed"
 		},
 		{
-			"type": "Feature",
+			
 			"clueNumber": 7,
 			"question": "Where the river meets the sea.",
 			"options": ["lagoon", "estuary", "marsh", "harbor"],
 			"answer": "estuary"
 		},
 		{
-			"type": "Feature",
+			
 			"clueNumber": 8,
 			"question": "Three thousand miles of these underground pipes carry waste.",
 			"options": ["sewer", "drain", "gas", "organ"],
 			"answer": "sewer"
 		},
 		{
-			"type": "Feature",
+			
 			"clueNumber": 9,
 			"question": "Rain that goes down the storm drain can end up in the ______",
 			"options": ["ocean", "sewer", "floodplain", "river"],
 			"answer": "river"
 		},
 		{
-			"type": "Feature",
-			"clueNumber": 9,
+			"clueNumber": 10,
 			"question": "A healthy Delaware Estuary provides a unique ______ for wildlife, such as horseshoe crab and migratory birds",
 			"options": ["home", "watershed", "habitat", "climate"],
 			"answer": "habitat"
 		},
 		{
-			"type": "Feature",
 			"clueNumber": 11,
 			"question": "Today's underground sewers used to be natural _____",
 			"options": ["unknown", "unknown", "unknown", "unknown"],
