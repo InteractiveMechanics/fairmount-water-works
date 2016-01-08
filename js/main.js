@@ -41,18 +41,25 @@ $('[data-toggle=tooltip]').tooltip({trigger: 'click'}).tooltip('show');
 //crossword modal shows when user clicks on tooltip
 $('[role=tooltip]').click(function() {
     var clue = $(this)[0].textContent;
-    // console.log($(th));
     $('.modal-content').html($('.clue-' + clue).html());
     $(this).attr('data-toggle', 'modal').attr('data-target', '#crosswordModal');
-})
+});
 
 //crossword answer visible when next button clicked
-$('.modal-trivia-next-button').click(function() {
-    $('.crossword-clue-container').removeClass('crossword-clue-hidden');
-})
+$('#crosswordModal').on('hidden.bs.modal', function() {
+    var $crosswordAnswer = $('.crossword-answer');
+    var $modalClueClassName = $('.clueNumber:first').text();
+    var $modalClueName = $modalClueClassName.substr(1);
+    var $crosswordClueClass = ".crossword-clue-" + $modalClueName;
+    
+    $($crosswordClueClass).find('>:first-child').removeClass('crossword-clue-hidden');
+
+    //alert($crosswordClueClass);
+});
 
 
-// handlebars
+
+// handlebars - crossword trivia
 $(function () {
   var raw_template = $('#trivia-template').html();   
   var template = Handlebars.compile(raw_template);
@@ -61,16 +68,15 @@ $(function () {
   $.get("../data/crossword.json",function(data,status,xhr){
         $.each(data,function(index,element){
             console.log(data);
-          // Generate the HTML for each post
+        
           var html = template(data);
           // Render the posts into the page
           placeHolder.append(html);
         });
-      });
- 
-
- 
+      }); 
 });
+
+
 
 
 
