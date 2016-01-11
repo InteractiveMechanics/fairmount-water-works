@@ -140,7 +140,7 @@
 			<p class="crossword-letter-across">e</p>
 			<p class="crossword-letter-across">w</p>
 			<p class="crossword-letter-across">e</p>
-			<p class="crossword-letter-across">w</p>
+			<p class="crossword-letter-across">r</p>
 		</div>
 	</div>
 </div> <!-- end row -->
@@ -197,9 +197,7 @@
 </div>
 
 <div class="modal-data">
-
 </div>
-
 
 
 <script id="trivia-template" type="text/x-handlebars-template">
@@ -210,13 +208,15 @@
 			    <div class="content-placeholder"></div>
 			    	<h1 class="clueNumber">#{{clueNumber}} </h1>
 			    	<p class="question">{{question}}</p>
-			    	<ul class="options">
+			    	<div class="options btn-group-vertical" role="group">
 			    		{{#each options}}
-			    		<li>
-			    		<button type="button" class="btn btn-default modal-trivia-button">{{this}}
-			    		</button></li>
+
+			    		<button type="button" data-toggle="button"class="btn btn-default modal-trivia-button">{{this}}
+			    		</button>
+
 			    		{{/each}}
-			    	</ul>
+			    	</div>
+			    	<p class="answer">{{answer}}</p>
 			    	<button type="button" class="btn btn-default modal-trivia-next-button" data-dismiss="modal">Next
 				    <svg version="1.1" id="right-arrow" class="right-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						viewBox="-21 26.7 21.6 12.3" enable-background="new -21 26.7 21.6 12.3" xml:space="preserve">

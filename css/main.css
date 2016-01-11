@@ -243,8 +243,14 @@ a {
   padding: 0;
   margin: 12px; }
 
-.crossword-clue-hidden {
+.modal-data {
   visibility: hidden; }
+
+.answer {
+  visibility: hidden; }
+
+.crossword-clue-hidden {
+  margin-left: -5000px; }
 
 .tooltip.top {
   margin-top: -10px; }

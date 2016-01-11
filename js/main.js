@@ -43,6 +43,7 @@ $('[role=tooltip]').click(function() {
     var clue = $(this)[0].textContent;
     $('.modal-content').html($('.clue-' + clue).html());
     $(this).attr('data-toggle', 'modal').attr('data-target', '#crosswordModal');
+    $('.modal-trivia-next-button').hide();
 });
 
 //crossword answer visible when next button clicked
@@ -56,7 +57,6 @@ $('#crosswordModal').on('hidden.bs.modal', function() {
 
     //alert($crosswordClueClass);
 });
-
 
 
 // handlebars - crossword trivia
@@ -76,18 +76,22 @@ $(function () {
       }); 
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
+// logic for trivia question
+$(document).delegate(".modal-trivia-button", "click", function(event){
+    var button = $(this).text().trim();
+    var answer = $('.answer').html().trim();
+    // alert(button);
+    // alert(answer);
+    if (button == answer) {
+      $(this).addClass('correct-answer');
+      alert('good job! correct answer!')
+      $('.modal-trivia-next-button').show();
+    } else {
+      $(this).addClass('disabled');
+      alert('close - try again!');
+    }
+   
+ });
 
 
 

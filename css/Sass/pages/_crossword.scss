@@ -117,10 +117,16 @@
 	// margin-bottom: 12px;
 }
 
+.modal-data {
+	visibility: hidden;
+}
 
+.answer {
+	visibility: hidden;
+}
 
 .crossword-clue-hidden {
-	visibility: hidden;
+	margin-left: -5000px;
 }
 
 .tooltip.top {
