@@ -1,26 +1,58 @@
 
-//welcome modal displays on load, but completion modal is hidden
-$(window).load(function(){
+//show modal only once
+$(document).ready(function(event) {
+    if(localStorage.getItem('modal_content_intro') != 'show'){
         $('#myModal').modal('show');
-        $('.modal-content-completion').hide();
+        localStorage.setItem('modal_content_intro','show');
+    }
+}); 
 
-    });
+// check for active buttons
+$(document).ready(function() {
+  checkForActiveButtons();
+});
+
+function checkForActiveButtons() {
+  if( localStorage.getItem('btn_1') == 'complete') {
+    console.log('ytfd');
+    $('.btn-1').removeClass('game-btn-waiting');
+    $('.btn-1').addClass('game-btn-complete');
+  }
+
+  if( localStorage.getItem('btn_2') == 'complete') {
+    $('.btn-2').addClass('disabled');
+  }
+
+  if( localStorage.getItem('btn_3') == 'complete') {
+    $('.btn-3').addClass('disabled');
+  }
+
+  if( localStorage.getItem('btn_4') == 'complete') {
+    $('.btn-4').addClass('disabled');
+  }
+
+  if( localStorage.getItem('btn_5') == 'complete') {
+    $('.btn-5').addClass('disabled');
+  }
+};
+
+// click events for each button
+
+$('.continue-btn-game-1').click(function() {
+  localStorage.setItem('btn_1', 'complete');
+})
 
 
 // on click, button changes from red to green, if all buttons are green, completion modal displays
 $(function(){
-	$('.game-btn').click(function(event) {
-		$(this).addClass('game-btn-complete');
-		$(this).removeClass('game-btn-waiting');
-		//event.preventDefault();
 		if (!$('.game-btn').not('.game-btn-complete').length) {
 			$('#myModal').modal('show');
     		$('.modal-content-intro').hide();
     		$('.modal-content-completion').show();
-            event.preventDefault();	
+        event.preventDefault();	
 		}
 	});
-});
+
 
 
 // invisibile page reload 
@@ -28,7 +60,8 @@ $('.magic-button').mousedown(function(e) {
     clearTimeout(this.downTimer);
     this.downTimer = setTimeout(function() {
         // alert('mousedown > 3 sec');
-        location.reload();   
+        location.reload();
+        localStorage.clear('.modal-content-intro');   
     }, 3000);
 }).mouseup(function(e) {
     clearTimeout(this.downTimer);
@@ -76,7 +109,7 @@ $(function () {
       }); 
 });
 
-// logic for trivia question
+// logic for trivia questions
 $(document).delegate(".modal-trivia-button", "click", function(event){
     var button = $(this).text().trim();
     var answer = $('.answer').html().trim();
@@ -89,9 +122,10 @@ $(document).delegate(".modal-trivia-button", "click", function(event){
     } else {
       $(this).addClass('disabled');
       alert('close - try again!');
-    }
-   
+    }   
  });
+
+
 
 
 
