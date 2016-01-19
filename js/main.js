@@ -10,6 +10,8 @@ $(document).ready(function(event) {
 // check for active buttons
 $(document).ready(function() {
   checkForActiveButtons();
+
+  watercycle();
 });
 
 function checkForActiveButtons() {
@@ -113,8 +115,6 @@ $(function () {
 $(document).delegate(".modal-trivia-button", "click", function(event){
     var button = $(this).text().trim();
     var answer = $('.answer').html().trim();
-    // alert(button);
-    // alert(answer);
     if (button == answer) {
       $(this).addClass('correct-answer');
       alert('good job! correct answer!')
@@ -126,34 +126,32 @@ $(document).delegate(".modal-trivia-button", "click", function(event){
  });
 
 
+// watercycle - drag and drop
+
+function watercycle() {
 
 
+  $('.draggable-widget').draggable({ 
+    snap: '.droppable-widget', 
+    snapMode: 'inner',
+    cursor: 'move',
+    cursorAt: {top: 10, left: 100}
+    });
 
+  $('.droppable-widget').droppable({
+    drop: function( event, ui ) {
+        var droppableNumber = $(this).data('vocab');
+        if(ui.draggable.is('[data-vocab="' + droppableNumber + '"]')) {
+          ui.draggable.addClass('testing');
+          ui.draggable.draggable('option', 'revert', false);
+          alert('good job!');
+        } else {
+          alert('nope, not there');
+          ui.draggable.draggable('option', 'revert', true);
+        }
+      }
+  });
 
+  alert('this is watercycle')
+};
 
-
-
-
-//////////////////////////////////
-// notes from meeting with Jeff //
-//////////////////////////////////
-
-// $(document).ready(function() {
-
-	 
-// 	 // grab all the values
-// 	 // var someVar = $('element');
-// 	 // var hasInteractedWith = false
-
-// 	 // someVar.onClick = function() {
-// 	 // 	var crossWordItem = (this).data('crossword-item');
-// 	 // 	if(!hasInteractedWith) { hasInteractedWith = true; //show continue button
-// 	 // 	}
-// 	 // }
-
-// 	 // // how to call JSON file
-// 	 // $getJSON('file.json', function(data) {
-// 	 // 	console.log(data);
-// 	 // })  
-
-// });

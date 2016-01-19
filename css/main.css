@@ -258,4 +258,87 @@ a {
 .tooltip {
   font-size: 18px; }
 
+.watercycle-container {
+  width: 1024px;
+  height: 768px;
+  position: relative; }
+
+.draggable-widget {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  width: 200px;
+  font-size: 18px;
+  z-index: 999; }
+
+.draggable-widget-content {
+  margin: 0; }
+
+.droppable-widget {
+  border: 2px dashed #777777;
+  position: absolute;
+  width: 200px;
+  height: 41px; }
+
+.draggable-widget[data-vocab="1"] {
+  top: 350px;
+  right: 150px; }
+
+.droppable-widget[data-vocab="1"] {
+  top: 250px;
+  left: 250px; }
+
+.draggable-widget[data-vocab="2"] {
+  top: 300px;
+  right: 150px; }
+
+.droppable-widget[data-vocab="2"] {
+  top: 175px;
+  right: 500px; }
+
+.draggable-widget[data-vocab="3"] {
+  top: 250px;
+  right: 150px; }
+
+.droppable-widget[data-vocab="3"] {
+  top: 400px;
+  left: 150px; }
+
+.draggable-widget[data-vocab="4"] {
+  top: 150px;
+  right: 150px; }
+
+.droppable-widget[data-vocab="4"] {
+  bottom: 100px;
+  right: 500px; }
+
+.draggable-widget[data-vocab="5"] {
+  bottom: 200px;
+  right: 150px; }
+
+.droppable-widget[data-vocab="5"] {
+  bottom: 200px;
+  left: 50px; }
+
+.draggable-widget[data-vocab="6"] {
+  top: 100px;
+  right: 150px; }
+
+.droppable-widget[data-vocab="6"] {
+  bottom: 200px;
+  left: 300px; }
+
+.draggable-widget[data-vocab="7"] {
+  top: 50px;
+  right: 150px; }
+
+.droppable-widget[data-vocab="7"] {
+  bottom: 300px;
+  right: 350px; }
+
+.testing {
+  background-color: #ff0055; }
+
 /*# sourceMappingURL=main.css.map */
