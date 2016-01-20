@@ -137,6 +137,33 @@ a {
   top: 220;
   left: 200; }
 
+.progress-meter {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  background-color: #123456;
+  position: absolute;
+  bottom: 50px;
+  left: 50px; }
+
+.progress-meter[data-score="1"] {
+  background-image: linear-gradient(162deg, transparent 50%, white 50%), linear-gradient(90deg, white 50%, transparent 50%); }
+
+.progress-meter[data-score="2"] {
+  background-image: linear-gradient(234deg, transparent 50%, white 50%), linear-gradient(90deg, white 50%, transparent 50%); }
+
+.progress-meter[data-score="3"] {
+  background-image: linear-gradient(144deg, transparent 50%, #123456 50%), linear-gradient(90deg, white 50%, transparent 50%); }
+
+.progress-meter[data-score="4"] {
+  background-image: linear-gradient(192deg, transparent 50%, #123456 50%), linear-gradient(90deg, white 50%, transparent 50%); }
+
+.progress-meter[data-score="5"] {
+  background-image: none; }
+
+.progress-meter[data-score="0"] {
+  background-image: linear-gradient(90deg, transparent 50%, white 50%), linear-gradient(90deg, white 50%, transparent 50%); }
+
 .crossword-container {
   position: relative;
   background-image: url(../img/activity-01-background@2x.jpg);

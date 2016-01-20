@@ -1,3 +1,7 @@
+/*** Handle jQuery plugin naming conflict between jQuery UI and Bootstrap ***/
+$.widget.bridge('uibutton', $.ui.button);
+$.widget.bridge('uitooltip', $.ui.tooltip);
+
 
 //show modal only once
 $(document).ready(function(event) {
@@ -12,6 +16,7 @@ $(document).ready(function() {
   checkForActiveButtons();
 
   watercycle();
+  tallyScore();
 });
 
 function checkForActiveButtons() {
@@ -27,11 +32,13 @@ function checkForActiveButtons() {
   }
 
   if( localStorage.getItem('btn_3') == 'complete') {
-    $('.btn-3').addClass('disabled');
+    $('.btn-3').removeClass('game-btn-waiting');
+    $('.btn-3').addClass('game-btn-complete');
   }
 
   if( localStorage.getItem('btn_4') == 'complete') {
-    $('.btn-4').addClass('disabled');
+    $('.btn-4').removeClass('game-btn-waiting');
+    $('.btn-4').addClass('game-btn-complete');
   }
 
   if( localStorage.getItem('btn_5') == 'complete') {
@@ -49,8 +56,18 @@ $('.continue-btn-game-2').click(function() {
   localStorage.setItem('btn_2', 'complete');
 })
 
+$('.continue-btn-game-3').click(function() {
+  localStorage.setItem('btn_3', 'complete');
+})
 
-// on click, button changes from red to green, if all buttons are green, completion modal displays
+$('.continue-btn-game-4').click(function() {
+  localStorage.setItem('btn_4', 'complete');
+})
+
+
+
+
+// if all buttons are green, completion modal displays
 $(function(){
 		if (!$('.game-btn').not('.game-btn-complete').length) {
 			$('#myModal').modal('show');
@@ -60,6 +77,12 @@ $(function(){
 		}
 	});
 
+//
+
+function tallyScore() {
+  var score = $('.game-btn-complete').length;
+  $('.progress-meter').attr('data-score', score);
+};
 
 
 // invisibile page reload 
@@ -134,7 +157,6 @@ $(document).delegate(".modal-trivia-button", "click", function(event){
 // watercycle - drag and drop
 
 function watercycle() {
-
 
   $('.draggable-widget').draggable({ 
     snap: '.droppable-widget', 
