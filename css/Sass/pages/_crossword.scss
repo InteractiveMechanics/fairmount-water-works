@@ -98,23 +98,14 @@
 .crossword-letter-across {
 	@include crossword-letter;
 	display: inline;
-	// padding-left: 0;
-	// padding-right: 0;
 	margin: 12px;
-	padding: 0;
-	// margin-left: 12px;
-	// margin-right: 12px;
-
+	padding: 0;	
 }
 
 .crossword-letter-down {
 	@include crossword-letter;
-	// padding-top: 0;
-	// padding-bottom: 0;
 	padding: 0;
 	margin: 12px;
-	// margin-top: 12px;
-	// margin-bottom: 12px;
 }
 
 .modal-data {

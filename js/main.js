@@ -22,7 +22,8 @@ function checkForActiveButtons() {
   }
 
   if( localStorage.getItem('btn_2') == 'complete') {
-    $('.btn-2').addClass('disabled');
+    $('.btn-2').removeClass('game-btn-waiting');
+    $('.btn-2').addClass('game-btn-complete');
   }
 
   if( localStorage.getItem('btn_3') == 'complete') {
@@ -42,6 +43,10 @@ function checkForActiveButtons() {
 
 $('.continue-btn-game-1').click(function() {
   localStorage.setItem('btn_1', 'complete');
+})
+
+$('.continue-btn-game-2').click(function() {
+  localStorage.setItem('btn_2', 'complete');
 })
 
 
@@ -151,7 +156,5 @@ function watercycle() {
         }
       }
   });
-
-  alert('this is watercycle')
 };
 

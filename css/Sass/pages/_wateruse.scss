@@ -1,0 +1,53 @@
+.wateruse-container {
+	position: relative;
+	background-size: 1024px 768px;
+	height: 768px;
+	background-color: #123456;	
+}
+
+.wateruse-header {
+	@include game-header();
+}
+
+.wateruse-footer {
+	position: absolute;
+	bottom: 50px;
+	right: 75px;
+}
+
+.wateruse-form {
+	width: 275px;
+	background-color: rgba(81, 81, 81, 0.7);
+	padding: 20px;
+	border-radius: 7px;
+}
+
+.wateruse-form-heading {
+	color: $white;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.wateruse-input {
+	margin-bottom: 15px;
+	border-radius: 0;
+	font-size: 16px;
+}
+
+.form-1 {
+	position: absolute;
+	top: 300px;
+	left: 50px;
+}
+
+.form-2 {
+	position: absolute;
+	top: 175px;
+	left: 375px;
+}
+
+.form-3 {
+	position: absolute;
+	top: 300px;
+	right: 50px;
+}
