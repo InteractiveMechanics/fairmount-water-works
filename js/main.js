@@ -160,7 +160,7 @@ function watercycle() {
 
   $('.draggable-widget').draggable({ 
     snap: '.droppable-widget', 
-    snapMode: 'inner',
+    snapMode: 'both',
     cursor: 'move',
     cursorAt: {top: 10, left: 100}
     });
@@ -169,14 +169,22 @@ function watercycle() {
     drop: function( event, ui ) {
         var droppableNumber = $(this).data('vocab');
         if(ui.draggable.is('[data-vocab="' + droppableNumber + '"]')) {
-          ui.draggable.addClass('testing');
-          ui.draggable.draggable('option', 'revert', false);
-          alert('good job!');
+          ui.draggable.append('<img class="watercycle-icon icon-correct" src="../img/icons/icon-correct-green.svg" alt="correct icon">');
+          ui.draggable.children(":nth-child(2)").addClass('hidden');
+          ui.draggable.find('.icon-incorrect').remove();
+          ui.draggable.draggable('option', 'disabled', true);
         } else {
-          alert('nope, not there');
-          ui.draggable.draggable('option', 'revert', true);
+          if (ui.draggable.find('img.icon-incorrect').length !=0) {
+            // do nothing
+          } else {
+          ui.draggable.append('<img class="watercycle-icon icon-incorrect" src="../img/icons/icon-incorrect-red.svg" alt="incorrect icon">')
+          ui.draggable.children(":nth-child(2)").addClass('hidden');
+            // ui.draggable.draggable('option', 'revert', true);
+            // ui.draggable.children(":nth-child(2)").removeClass('hidden');
+            // ui.draggable.find('.icon-incorrect').remove();
+          }
         }
       }
   });
 };
-
+  

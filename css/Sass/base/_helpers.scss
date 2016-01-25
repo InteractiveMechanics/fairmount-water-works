@@ -11,14 +11,24 @@ a {
 }
 
 .page-icon {
-	height: 55px;
-	width: 55px;
-	background-color: #777777;
-	border-radius: 50%;
+	height: 80px;
+	width: 80px;
 	display: inline-block;
+	border-radius: 50%;
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
 }
 
 .right-arrow {
 	width: 20px;
+	margin-left: 12px;
+	margin-bottom: 3px;
+}
+
+h1, h2, h3 {
+	font-family: $bebas;
+}
+
+h4, h5, h6, p {
+	font-family: $opensans_regular;
 }
 

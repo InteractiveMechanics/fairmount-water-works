@@ -2,6 +2,10 @@
 	width: 1024px;
 	height: 768px;
 	position: relative;
+	background-image: url(../img/background-activity-02@2x.png);
+	background-size: 1024px 768px;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .watercycle-container {
@@ -21,14 +25,16 @@
 }
 
 .draggable-widget {
-	box-shadow: 0px 0px 5px rgba(0,0,0, 0.25);
-	//background-color: #ff0055;
+	box-shadow: 0px 3px 7px rgba(0,0,0, 0.35);
+	background-color: $white;
 	position: absolute;
+	right: 25px;
 	display: flex;
 	align-items: center;
-	padding: 8px 16px;
-	width: 200px;
-	font-size: 18px;
+	justify-content: space-between;
+	padding: 7px 14px;
+	width: 160px;
+	font-size: 16px;
 	z-index: 999;
 }
 
@@ -37,82 +43,88 @@
 }
 
 .droppable-widget {
-	border: 2px dashed #777777;
+	border: 2px dotted #777777;
 	position: absolute;
-	width: 200px;
-	height: 41px;
+	width: 160px;
+	height: 36px;
 }
 
+
+
 .draggable-widget[data-vocab="1"] {
-	top: 350px;
-	right: 150px;
+	top: 100px;
 }
 
 .droppable-widget[data-vocab="1"] {
-	top: 250px;
-	left: 250px;
+	top: 415px;
+	left: 268px;
 }
 
 .draggable-widget[data-vocab="2"] {
-	top: 300px;
-	right: 150px;
+	top: 150px;
 }
 
 .droppable-widget[data-vocab="2"] {
-	top: 175px;
-	right: 500px;
+	top: 140px;
+	left: 188px;
 }
 
 .draggable-widget[data-vocab="3"] {
-	top: 250px;
-	right: 150px;
+	top: 200px;
 }
 
 .droppable-widget[data-vocab="3"] {
-	top: 400px;
-	left: 150px;
+	top: 183px;
+	right: 432px;
 }
 
 .draggable-widget[data-vocab="4"] {
-	top: 150px;
-	right: 150px;
+	top: 250px;
 }
 
 .droppable-widget[data-vocab="4"] {
-	bottom: 100px;
-	right: 500px;
+	bottom: 74px;
+	right: 265px;
 }
 
 .draggable-widget[data-vocab="5"] {
-	bottom: 200px;
-	right: 150px;
+	top: 300px;
 }
 
 .droppable-widget[data-vocab="5"] {
-	bottom: 200px;
-	left: 50px;
+	top: 110px;
+	right: 238px;
 }
 
 .draggable-widget[data-vocab="6"] {
-	top: 100px;
-	right: 150px;
+	top: 350px;
 }
 
 .droppable-widget[data-vocab="6"] {
-	bottom: 200px;
-	left: 300px;
+	top: 285px;
+	left: 39px;
 }
 
 .draggable-widget[data-vocab="7"] {
-	top: 50px;
-	right: 150px;
+	top: 400px;
 }
 
 .droppable-widget[data-vocab="7"] {
-	bottom: 300px;
-	right: 350px;
+	bottom: 213px;
+	right: 94px;
 }
 .testing {
 	background-color: #ff0055;;
 }
 
+.watercycle-icon {
+	width: 13px;
+}
+
+.icon-correct {
+	fill: green;
+}
+
+.hidden {
+	visibility: hidden;
+}

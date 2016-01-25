@@ -1,7 +1,18 @@
 .game-footer {
 	border-radius: 30px;
-	font-size: 20px;
-	padding: 8px 14px;
-	border: 1px solid black;
+	font-size: 18px;
+	padding: 8px 17px;
+	border: 2px solid black;
 	float: right;
+	font-family: $bebas;
+	&:hover {
+		border: 2px solid blue;
+		background-color: blue;
+		color: $white;
+		transition: $transition;
+		.right-arrow {
+			fill: $white;
+		}
+	}
 }
+
