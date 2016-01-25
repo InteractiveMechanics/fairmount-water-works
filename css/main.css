@@ -26,7 +26,7 @@ section {
 
 a {
   text-decoration: none;
-  color: #212121; }
+  color: #f1f2f2; }
   a:hover {
     text-decoration: none; }
 
@@ -40,7 +40,8 @@ a {
 .right-arrow {
   width: 20px;
   margin-left: 12px;
-  margin-bottom: 3px; }
+  margin-bottom: 3px;
+  fill: #f1f2f2; }
 
 h1, h2, h3 {
   font-family: "bebas", Helvetica, Arial, sans-serif; }
@@ -52,12 +53,12 @@ h4, h5, h6, p {
   border-radius: 30px;
   font-size: 18px;
   padding: 8px 17px;
-  border: 2px solid black;
+  border: 2px solid #f1f2f2;
   float: right;
   font-family: "bebas", Helvetica, Arial, sans-serif; }
   .game-footer:hover {
-    border: 2px solid blue;
-    background-color: blue;
+    border: 2px solid #1b75bb;
+    background-color: #1b75bb;
     color: #f1f2f2;
     transition: all 0.25s ease-in-out; }
     .game-footer:hover .right-arrow {

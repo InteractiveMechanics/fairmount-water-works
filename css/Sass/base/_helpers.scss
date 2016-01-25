@@ -4,7 +4,7 @@ section {
 
 a {
 	text-decoration: none;
-	color: $black;
+	color: $white;
 	&:hover {
 		text-decoration: none;
 	}
@@ -22,6 +22,7 @@ a {
 	width: 20px;
 	margin-left: 12px;
 	margin-bottom: 3px;
+	fill: $white;
 }
 
 h1, h2, h3 {
