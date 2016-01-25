@@ -1,5 +1,4 @@
 .watercycle-container {
-	width: 1024px;
 	height: 768px;
 	position: relative;
 	background-image: url(../img/background-activity-02@2x.png);
@@ -8,11 +7,11 @@
 	background-position: center center;
 }
 
-.watercycle-container {
-	position: relative;
-	background-size: 1024px 768px;
-	height: 768px;
-}
+// .watercycle-container {
+// 	position: relative;
+// 	background-size: 1024px 768px;
+// 	height: 768px;
+// }
 
 .watercycle-header {
 	@include game-header();
@@ -20,8 +19,8 @@
 
 .watercycle-footer {
 	position: absolute;
-	bottom: 50px;
-	right: 75px;
+	bottom: 75px;
+	right: 35px;
 }
 
 .draggable-widget {

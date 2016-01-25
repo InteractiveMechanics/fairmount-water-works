@@ -1,8 +1,10 @@
 .wateruse-container {
+	height: 768px;
 	position: relative;
 	background-size: 1024px 768px;
-	height: 768px;
-	background-color: #123456;	
+	background-image: url(../img/background-activity-03@2x.png);
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .wateruse-header {
@@ -11,20 +13,21 @@
 
 .wateruse-footer {
 	position: absolute;
-	bottom: 50px;
-	right: 75px;
+	bottom: 75px;
+	right: 35px;
 }
 
 .wateruse-form {
 	width: 275px;
 	background-color: rgba(81, 81, 81, 0.7);
-	padding: 20px;
+	padding: 22px;
 	border-radius: 7px;
 }
 
+
 .wateruse-form-heading {
 	color: $white;
-	font-size: 18px;
+	font-size: 17px;
 	margin-bottom: 30px;
 }
 
@@ -32,22 +35,25 @@
 	margin-bottom: 15px;
 	border-radius: 0;
 	font-size: 16px;
+	box-shadow: none;
+	border: none;
 }
+
 
 .form-1 {
 	position: absolute;
-	top: 300px;
+	top: 227px;
 	left: 50px;
 }
 
 .form-2 {
 	position: absolute;
-	top: 175px;
+	top: 137px;
 	left: 375px;
 }
 
 .form-3 {
 	position: absolute;
-	top: 300px;
+	top: 227px;
 	right: 50px;
 }
