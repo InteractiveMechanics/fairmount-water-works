@@ -1,0 +1,60 @@
+.waterwheel-container {
+	height: 768px;
+	position: relative;
+	//background-image: url(../img/background-activity-04@2x.png);
+	background-size: 1024px 768px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #777777;
+}
+
+.waterwheel-header {
+	@include game-header();
+	z-index: 2;
+}
+
+.waterwheel-footer {
+	position: absolute;
+	bottom: 25px;
+	right: 35px;
+}
+
+.video-poster {
+	width: 1024px;
+	height: 768px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+// .videoWrapper {
+// 	position: relative;
+// }
+
+
+.waterwheel-button {
+	position: absolute;
+	bottom: 50%;
+	left: 20%;
+	text-transform: uppercase;
+	background-color: $blue;
+	padding: 15px 20px;
+	border-radius: 30px;
+	color: rgba(241, 242, 242, 0.5);
+	font-size: 40px;
+	font-family: $bebas;
+	&:hover, &:active, &:focus, &:focus:active {
+		color: rgba(241, 242, 242, 0.85);
+		text-decoration: none;
+		.play-button {
+			opacity: 0.85;
+		}
+	}
+}
+
+.play-button {
+	width: 30px;
+	margin-right: 10px;
+	opacity: 0.5;
+	fill: $white;
+}

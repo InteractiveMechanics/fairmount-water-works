@@ -509,4 +509,67 @@ h4, h5, h6, p {
   top: 227px;
   right: 50px; }
 
+.waterwheel-container {
+  height: 768px;
+  position: relative;
+  background-size: 1024px 768px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #777777; }
+
+.waterwheel-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  z-index: 2; }
+  .waterwheel-header h1 {
+    display: inline-block;
+    margin-top: 0;
+    font-size: 32px; }
+  .waterwheel-header p {
+    font-style: italic; }
+  .waterwheel-header .page-title {
+    display: inline-block;
+    margin-left: 20px; }
+
+.waterwheel-footer {
+  position: absolute;
+  bottom: 25px;
+  right: 35px; }
+
+.video-poster {
+  width: 1024px;
+  height: 768px;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.waterwheel-button {
+  position: absolute;
+  bottom: 50%;
+  left: 20%;
+  text-transform: uppercase;
+  background-color: #1b75bb;
+  padding: 15px 20px;
+  border-radius: 30px;
+  color: rgba(241, 242, 242, 0.5);
+  font-size: 40px;
+  font-family: "bebas", Helvetica, Arial, sans-serif; }
+  .waterwheel-button:hover, .waterwheel-button:active, .waterwheel-button:focus, .waterwheel-button:focus:active {
+    color: rgba(241, 242, 242, 0.85);
+    text-decoration: none; }
+    .waterwheel-button:hover .play-button, .waterwheel-button:active .play-button, .waterwheel-button:focus .play-button, .waterwheel-button:focus:active .play-button {
+      opacity: 0.85; }
+
+.play-button {
+  width: 30px;
+  margin-right: 10px;
+  opacity: 0.5;
+  fill: #f1f2f2; }
+
 /*# sourceMappingURL=main.css.map */

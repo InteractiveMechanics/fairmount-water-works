@@ -187,4 +187,12 @@ function watercycle() {
       }
   });
 };
-  
+
+$('.waterwheel-button').click(function() {
+    alert('your function is working!');
+    $(this).addClass('hidden');
+    $('#myVideo').get(0).play();
+    $('.waterwheel-header').addClass('hidden');
+    $('.continue-btn-game-4').removeClass('hidden');
+});
+
