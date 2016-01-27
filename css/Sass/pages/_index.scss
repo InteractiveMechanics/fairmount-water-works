@@ -1,7 +1,7 @@
 
 .map-container {
 	position: relative;
-	background-image: url(../img/index-background@2x.jpg);
+	background-image: url(../img/background-map@2x.png);
 	background-size: 1024px 768px;	
 	height: 100%;
 	background-repeat: no-repeat;
@@ -17,25 +17,30 @@
 }
 
 
+
 // map buttons
+.homepage-game-icon, .homepage-complete-icon {
+	width: 57px;
+}
+
 .game-btn {
 	height: 55px;
 	width: 55px;
 	border-radius: 50%;
+	box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.50);
 	background-color: red;
 	color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: absolute;
+	transition: $transition;
 }
 
 .game-btn-waiting {
-	background-color: red;
 	&:hover {
 		background-color: white;
-		color: #ff6666;
-		border: 2px solid red;
+		box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.90);
 	}
 }
 
@@ -50,7 +55,7 @@
 
 .btn-1 {
 	top: 370;
-	right: 150;
+	right: 150;	
 }
 
 .btn-2 {
