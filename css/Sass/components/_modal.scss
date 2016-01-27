@@ -1,11 +1,49 @@
 .modal-content-intro, .modal-content-completion {
 	text-align: center;
-	background-color: rgba(100, 100, 100, 0.5);
+	background-color: rgba(27, 117, 187, 0.5);
 	color: #f1f2f2;
+	text-transform: uppercase;
 }
 
+.modal-content-intro {
+	height: 768px;
+}
+
+.modal-intro-content-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	a {
+		font-size: 24px;
+		font-family: $bebas;
+		.right-arrow {
+			width: 30px;
+			position: relative;
+		}
+		&:hover, &:active, &:focus, &:active:focus {
+			position: relative;
+			transition: $transition;
+			color: $white;
+			.right-arrow {
+				left: 5px;
+			}
+		}
+	}
+}
+
+.modal-intro-logo {
+	margin-bottom: 0;
+}
+
+.modal-intro-title {
+	font-size: 62px;
+	margin-bottom: 0;
+}
+
+
 .modal-backdrop {
-   background-color: #dedede;
+   background-color: $blue;
 }
 
 .modal-lg {

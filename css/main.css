@@ -66,11 +66,40 @@ h4, h5, h6, p {
 
 .modal-content-intro, .modal-content-completion {
   text-align: center;
-  background-color: rgba(100, 100, 100, 0.5);
-  color: #f1f2f2; }
+  background-color: rgba(27, 117, 187, 0.5);
+  color: #f1f2f2;
+  text-transform: uppercase; }
+
+.modal-content-intro {
+  height: 768px; }
+
+.modal-intro-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; }
+  .modal-intro-content-container a {
+    font-size: 24px;
+    font-family: "bebas", Helvetica, Arial, sans-serif; }
+    .modal-intro-content-container a .right-arrow {
+      width: 30px;
+      position: relative; }
+    .modal-intro-content-container a:hover, .modal-intro-content-container a:active, .modal-intro-content-container a:focus, .modal-intro-content-container a:active:focus {
+      position: relative;
+      transition: all 0.25s ease-in-out;
+      color: #f1f2f2; }
+      .modal-intro-content-container a:hover .right-arrow, .modal-intro-content-container a:active .right-arrow, .modal-intro-content-container a:focus .right-arrow, .modal-intro-content-container a:active:focus .right-arrow {
+        left: 5px; }
+
+.modal-intro-logo {
+  margin-bottom: 0; }
+
+.modal-intro-title {
+  font-size: 62px;
+  margin-bottom: 0; }
 
 .modal-backdrop {
-  background-color: #dedede; }
+  background-color: #1b75bb; }
 
 .modal-lg {
   width: 1024px; }
@@ -183,28 +212,32 @@ h4, h5, h6, p {
   height: 75px;
   width: 75px;
   border-radius: 50%;
-  background-color: #123456;
   position: absolute;
   bottom: 50px;
-  left: 50px; }
+  left: 50px;
+  background-size: 75px 75px;
+  background-position: center center; }
 
-.progress-meter[data-score="1"] {
-  background-image: linear-gradient(162deg, transparent 50%, white 50%), linear-gradient(90deg, white 50%, transparent 50%); }
-
-.progress-meter[data-score="2"] {
-  background-image: linear-gradient(234deg, transparent 50%, white 50%), linear-gradient(90deg, white 50%, transparent 50%); }
-
-.progress-meter[data-score="3"] {
-  background-image: linear-gradient(144deg, transparent 50%, #123456 50%), linear-gradient(90deg, white 50%, transparent 50%); }
-
-.progress-meter[data-score="4"] {
-  background-image: linear-gradient(192deg, transparent 50%, #123456 50%), linear-gradient(90deg, white 50%, transparent 50%); }
-
-.progress-meter[data-score="5"] {
-  background-image: none; }
+.progress-meter-icon {
+  width: 75px; }
 
 .progress-meter[data-score="0"] {
-  background-image: linear-gradient(90deg, transparent 50%, white 50%), linear-gradient(90deg, white 50%, transparent 50%); }
+  background-image: url(../img/progress/progress-00@2x.png); }
+
+.progress-meter[data-score="1"] {
+  background-image: url(../img/progress/progress-01@2x.png); }
+
+.progress-meter[data-score="2"] {
+  background-image: url(../img/progress/progress-02@2x.png); }
+
+.progress-meter[data-score="3"] {
+  background-image: url(../img/progress/progress-03@2x.png); }
+
+.progress-meter[data-score="4"] {
+  background-image: url(../img/progress/progress-04@2x.png); }
+
+.progress-meter[data-score="5"] {
+  background-image: url(../img/progress/progress-05@2x.png); }
 
 .crossword-container {
   position: relative;
