@@ -111,7 +111,7 @@ $('.magic-button').mousedown(function(e) {
 
 
 // tooltip shows on page load
-$('[data-toggle=tooltip]').tooltip({trigger: 'click'}).tooltip('show');
+$('[data-toggle=tooltip]').tooltip({trigger: 'click', html: true}).tooltip('show');
 
 //crossword modal shows when user clicks on tooltip
 $('[role=tooltip]').click(function() {
@@ -128,10 +128,22 @@ $('#crosswordModal').on('hidden.bs.modal', function() {
     var $modalClueName = $modalClueClassName.substr(1);
     var $crosswordClueClass = ".crossword-clue-" + $modalClueName;
     
-    $($crosswordClueClass).find('>:first-child').removeClass('crossword-clue-hidden');
 
-    //alert($crosswordClueClass);
+    $($crosswordClueClass).find('>:first-child').removeClass('crossword-clue-hidden');
+    $($crosswordClueClass).siblings('.tooltip').children('.tooltip-inner').addClass('tooltip-correct');
+      
+    $($crosswordClueClass).siblings('.top').children('.tooltip-arrow').addClass('tooltip-top-arrow-correct');
+    $($crosswordClueClass).siblings('.right').children('.tooltip-arrow').addClass('tooltip-right-arrow-correct');
+    $($crosswordClueClass).siblings('.left').children('.tooltip-arrow').addClass('tooltip-left-arrow-correct');
+
+    $($crosswordClueClass).tooltip('show')
+          .attr('data-original-title', '<img src="img/icons/icon-correct2.svg">')
+          .tooltip('fixTitle')
+          .tooltip('show')
+          .tooltip('disable');
 });
+
+
 
 
 // handlebars - crossword trivia
@@ -157,7 +169,6 @@ $(document).delegate(".modal-trivia-button", "click", function(event){
     var answer = $('.answer').html().trim();
     if (button == answer) {
       $(this).addClass('correct-answer');
-      alert('good job! correct answer!')
       $('.modal-trivia-next-button').show();
     } else {
       $(this).addClass('disabled');
@@ -208,3 +219,6 @@ $('.waterwheel-button').click(function() {
     $('.continue-btn-game-4').removeClass('hidden');
 });
 
+// $('[data-toggle="tooltip"]').tooltip({
+//    container: 'body'
+// });

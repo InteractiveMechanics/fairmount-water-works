@@ -239,6 +239,10 @@ h4, h5, h6, p {
 .progress-meter[data-score="5"] {
   background-image: url(../img/progress/progress-05@2x.png); }
 
+body {
+  width: 1024px;
+  height: 768px; }
+
 .crossword-container {
   position: relative;
   background-image: url(../img/activity-01-background@2x.jpg);
@@ -268,8 +272,8 @@ h4, h5, h6, p {
 
 .crossword-footer {
   position: absolute;
-  bottom: 50px;
-  right: 75px; }
+  bottom: 40px;
+  right: 10px; }
 
 .crosswordModal {
   position: absolute;
@@ -278,28 +282,28 @@ h4, h5, h6, p {
 
 .crossword-clue-1 {
   position: absolute;
-  top: 91px;
-  right: 320px; }
+  top: 89px;
+  right: 329px; }
 
 .crossword-clue-2 {
   position: absolute;
-  top: 149px;
-  right: 91px; }
+  top: 147px;
+  right: 97px; }
 
 .crossword-clue-3 {
   position: absolute;
-  top: 178px;
-  left: 190px; }
+  top: 181px;
+  left: 183px; }
 
 .crossword-clue-4 {
   position: absolute;
-  top: 183px;
+  top: 181px;
   right: 457px; }
 
 .crossword-clue-5 {
   position: absolute;
-  top: 230px;
-  left: 375px; }
+  top: 221px;
+  left: 362px; }
 
 .crossword-clue-6 {
   position: absolute;
@@ -359,10 +363,29 @@ h4, h5, h6, p {
   margin-left: -5000px; }
 
 .tooltip.top {
-  margin-top: -10px; }
+  margin-top: -3px; }
 
 .tooltip {
-  font-size: 18px; }
+  font-size: 18px;
+  font-family: "opensans_regular", Helvetica, Arial, sans-serif; }
+
+.tooltip-inner {
+  border-radius: 0px; }
+
+.tooltip-correct {
+  background-color: #00a550; }
+
+.tooltip-right-arrow-correct {
+  border-right-color: #00a550 !important; }
+
+.tooltip-top-arrow-correct {
+  border-top-color: #00a550 !important; }
+
+.tooltip-left-arrow-correct {
+  border-left-color: #00a550 !important; }
+
+.shared-letter {
+  color: transparent; }
 
 .watercycle-container {
   height: 768px;

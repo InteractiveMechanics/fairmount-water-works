@@ -1,3 +1,8 @@
+body {
+	width: 1024px;
+	height: 768px;
+}
+
 .crossword-container {
 	position: relative;
 	background-image: url(../img/activity-01-background@2x.jpg);
@@ -11,10 +16,12 @@
 	@include game-header();
 }
 
+
+
 .crossword-footer {
 	position: absolute;
-	bottom: 50px;
-	right: 75px;	
+	bottom: 40px;
+	right: 10px;	
 }
 
 
@@ -26,32 +33,33 @@
 
 .crossword-clue-1 {
 	position: absolute;
-	top: 91px;
-	right: 320px;
+	top: 89px;
+	right: 329px;
 }
 
 .crossword-clue-2 {
 	position: absolute;
-	top: 149px;
-	right: 91px;
+	top: 147px;
+	right: 97px;
 }
+
 
 .crossword-clue-3 {
 	position: absolute;
-	top: 178px;
-	left: 190px;
+	top: 181px;
+	left: 183px;
 }
 
 .crossword-clue-4 {
 	position: absolute;
-	top: 183px;
+	top: 181px;
 	right: 457px;
 }
 
 .crossword-clue-5 {
 	position: absolute;
-	top: 230px;
-	left: 375px;
+	top: 221px;
+	left: 362px;
 }
 
 .crossword-clue-6 {
@@ -99,7 +107,7 @@
 	@include crossword-letter;
 	display: inline;
 	margin: 12px;
-	padding: 0;	
+	padding: 0;
 }
 
 .crossword-letter-down {
@@ -121,9 +129,35 @@
 }
 
 .tooltip.top {
-	margin-top: -10px
+	margin-top: -3px
 }
 
 .tooltip {
 	font-size: 18px;
+	font-family: $opensans_regular;
+}
+
+.tooltip-inner {
+	border-radius: 0px;
+}
+
+.tooltip-correct {
+	background-color: $green;
+
+}
+
+.tooltip-right-arrow-correct {
+	border-right-color: $green !important;
+}
+
+.tooltip-top-arrow-correct {
+	border-top-color: $green !important;
+}
+
+.tooltip-left-arrow-correct {
+	border-left-color: $green !important;
+}
+
+.shared-letter{
+	color: transparent;
 }
