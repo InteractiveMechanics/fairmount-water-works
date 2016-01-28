@@ -131,16 +131,14 @@ $('#crosswordModal').on('hidden.bs.modal', function() {
 
     $($crosswordClueClass).find('>:first-child').removeClass('crossword-clue-hidden');
     $($crosswordClueClass).siblings('.tooltip').children('.tooltip-inner').addClass('tooltip-correct');
-      
     $($crosswordClueClass).siblings('.top').children('.tooltip-arrow').addClass('tooltip-top-arrow-correct');
     $($crosswordClueClass).siblings('.right').children('.tooltip-arrow').addClass('tooltip-right-arrow-correct');
     $($crosswordClueClass).siblings('.left').children('.tooltip-arrow').addClass('tooltip-left-arrow-correct');
 
     $($crosswordClueClass).tooltip('show')
-          .attr('data-original-title', '<img src="img/icons/icon-correct2.svg">')
-          .tooltip('fixTitle')
-          .tooltip('show')
-          .tooltip('disable');
+      .attr('data-original-title', '<img src="img/icons/icon-correct2.svg">')
+      .tooltip('fixTitle')
+      .tooltip('show');
 });
 
 
@@ -219,6 +217,6 @@ $('.waterwheel-button').click(function() {
     $('.continue-btn-game-4').removeClass('hidden');
 });
 
-// $('[data-toggle="tooltip"]').tooltip({
-//    container: 'body'
-// });
+
+
+
