@@ -104,10 +104,15 @@ h4, h5, h6, p {
 .modal-lg {
   width: 1024px; }
 
+.modal-open .modal {
+  overflow-x: visible;
+  overflow-y: visible; }
+
 .trivia-modal-container {
   top: 100px;
   left: 290px;
-  z-index: 9999; }
+  z-index: 2000;
+  position: absolute; }
 
 .modal-backdrop {
   background-color: #212121; }
@@ -129,7 +134,19 @@ h4, h5, h6, p {
   border: none; }
 
 .clueNumber {
-  margin-top: 0; }
+  z-index: 9999;
+  margin-top: 0;
+  display: flex;
+  left: -62px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background: #f1f2f2;
+  color: #1b75bb;
+  border-radius: 50%;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center; }
 
 .question {
   font-size: 24px; }

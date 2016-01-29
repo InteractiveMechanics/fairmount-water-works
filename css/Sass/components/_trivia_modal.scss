@@ -1,7 +1,15 @@
+.modal-open .modal {
+	overflow-x: visible;
+	overflow-y: visible;
+}
+
 .trivia-modal-container {
 	top: 100px;
 	left: 290px;
-	z-index: 9999;
+	z-index: 2000;
+	position: absolute;
+	// overflow-x: visible;
+	// overflow-y: visible;
 }
 
 .modal-backdrop {
@@ -30,7 +38,20 @@
 }
 
 .clueNumber {
+	z-index: 9999;
 	margin-top: 0;
+	display: flex;
+	left: -62px;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	background: $white;
+	color: $blue;
+	//padding: 13px;
+	border-radius: 50%;
+	font-size: 24px;
+	align-items: center;
+	justify-content: center;
 }
 
 .question {
