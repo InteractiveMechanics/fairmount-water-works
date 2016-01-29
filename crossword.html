@@ -193,8 +193,8 @@
 </div> <!-- end crossword container -->
 
 <!--Trivia Modal -->
-<div class="modal fade bs-example-modal-lg" id="crosswordModal" tabindex="-1" role="dialog">
-	<div class="modal-dialog modal-lg modal-trivia-dialog">
+<div class="modal fade trivia-modal-container" id="crosswordModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-trivia-dialog">
 	  	<div class="modal-content modal-trivia-content">
 	    	<!-- Template data goes here -->
 		</div>
@@ -209,7 +209,7 @@
 	{{#each trivia}}
 	<div class="clue-{{clueNumber}}">
 		<div class="row">
-			<div class="col-sm-4 col-sm-offset-4">
+			<div class="col-sm-12">
 			    <div class="content-placeholder"></div>
 			    	<h1 class="clueNumber">#{{clueNumber}} </h1>
 			    	<p class="question">{{question}}</p>
@@ -222,7 +222,7 @@
 			    		{{/each}}
 			    	</div>
 			    	<p class="answer">{{answer}}</p>
-			    	<button type="button" class="btn btn-default modal-trivia-next-button" data-dismiss="modal">Next
+			    	<button type="button" class="btn btn-default modal-trivia-next-button" data-dismiss="modal" disabled="disable">Next
 				    <svg version="1.1" id="right-arrow" class="right-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						viewBox="-21 26.7 21.6 12.3" enable-background="new -21 26.7 21.6 12.3" xml:space="preserve">
 							<g>

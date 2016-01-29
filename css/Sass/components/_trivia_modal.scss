@@ -1,26 +1,40 @@
+.trivia-modal-container {
+	top: 100px;
+	left: 290px;
+	z-index: 9999;
+}
 
-
+.modal-backdrop {
+   background-color: $black;
+}
 
 .modal-trivia-dialog {
 	margin: 0;
-	height: 768px;
+	// height: 768px;
 }
 
 
 .modal-trivia-content {
-	background-color: rgba(100, 100, 100, 0.5);
+	background-color: $blue;
 	color: #f1f2f2;
-	//padding-top: 60px;
+	border-radius: 0px;
+	padding: 30px 50px;
 	height: 100%;
-	width: 100%;
+	width: 450px;
 	display: flex;
 	flex-direction: column;
 	//align-items: center;
 	justify-content: center;
+	box-shadow: none;
+	border: none;
 }
 
 .clueNumber {
 	margin-top: 0;
+}
+
+.question {
+	font-size: 24px;
 }
 
 .options {
@@ -28,29 +42,57 @@
 	padding-left: 0;
 }
 
+.btn-group-vertical>.btn:first-child:not(:last-child) {
+	border-radius: 4px;
+}
+
+.btn-group-vertical>.btn:not(:first-child):not(:last-child) {
+	border-radius: 4px;
+}
+
+.btn-group-vertical>.btn:last-child:not(:first-child) {
+	border-radius: 4px;
+}
+
+.btn-group-vertical>.btn {
+	width: 320px;
+}
+
 .modal-trivia-button {
-	width: 100%;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	text-transform: uppercase;
-	margin-top: 5px;
-	margin-bottom: 5px;
 	font-size: 18px;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	color: $blue;
 }
 
 .modal-trivia-next-button {
 	display: block;
 	margin: 20px auto 0 auto;
-	padding: 10px 35px;
+	padding: 10px 25px;
 	margin: 0 auto;
 	font-size: 18px;
 	border-radius: 20px;
 	background-color: transparent;
     border: 2px solid #fff;
     color: #fff;
+    font-family: $bebas;
+    transition: $transition;
+    &:hover, &:active, &:focus, &:focus:active {
+    	color: $blue;
+    	border-color: $white;
+    	.right-arrow {
+    		fill: $blue;
+    	}
+    }
 
 }
 
 .modal-trivia-next-button .right-arrow {
-	fill: #fff;
+	fill: $white;
+	margin-left: 5px;
+	margin-bottom: 3px;
+
 }

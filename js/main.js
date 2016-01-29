@@ -118,7 +118,7 @@ $('[role=tooltip]').click(function() {
     var clue = $(this)[0].textContent;
     $('.modal-content').html($('.clue-' + clue).html());
     $(this).attr('data-toggle', 'modal').attr('data-target', '#crosswordModal');
-    $('.modal-trivia-next-button').hide();
+    //$('.modal-trivia-next-button').hide();
 });
 
 //crossword answer visible when next button clicked
@@ -167,7 +167,7 @@ $(document).delegate(".modal-trivia-button", "click", function(event){
     var answer = $('.answer').html().trim();
     if (button == answer) {
       $(this).addClass('correct-answer');
-      $('.modal-trivia-next-button').show();
+      $(this).parents('.options').siblings('.modal-trivia-next-button').attr('disabled', false);
     } else {
       $(this).addClass('disabled');
       alert('close - try again!');
