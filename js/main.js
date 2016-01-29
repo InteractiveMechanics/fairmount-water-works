@@ -54,7 +54,10 @@ function checkForActiveButtons() {
   }
 
   if( localStorage.getItem('btn_5') == 'complete') {
-    $('.btn-5').addClass('disabled');
+    $('.btn-5').removeClass('game-btn-waiting');
+    $('.btn-5').addClass('game-btn-complete');
+    $('.btn-5').children(':first-child').addClass('hidden');
+    $('.btn-5').append('<img class="homepage-complete-icon" src="img/icons/icon-activity-complete.svg" alt="">');
   }
 };
 
@@ -76,7 +79,9 @@ $('.continue-btn-game-4').click(function() {
   localStorage.setItem('btn_4', 'complete');
 })
 
-
+$('.continue-btn-game-5').click(function() {
+  localStorage.setItem('btn_5', 'complete');
+})
 
 
 // if all buttons are green, completion modal displays
@@ -84,7 +89,7 @@ $(function(){
 		if (!$('.game-btn').not('.game-btn-complete').length) {
 			$('#myModal').modal('show');
     		$('.modal-content-intro').hide();
-    		$('.modal-content-completion').show();
+    		$('.modal-content-completion').removeClass('hidden');
         event.preventDefault();	
 		}
 	});

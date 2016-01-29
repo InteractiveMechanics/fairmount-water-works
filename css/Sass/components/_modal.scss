@@ -1,15 +1,24 @@
 .modal-content-intro, .modal-content-completion {
 	text-align: center;
-	background-color: rgba(27, 117, 187, 0.6);
+	background-color: rgba(25, 25, 25, 0.25);
 	color: #f1f2f2;
-	text-transform: uppercase;
+	height: 100vh;
+}
+
+.modal-intro-dialog {
+	margin: 0;
 }
 
 .modal-content-intro {
-	height: 768px;
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
 }
 
-
+.modal-intro-image {
+	height: 768px;
+	width: 1024px;
+}
 
 
 .modal-intro-content-container {
@@ -35,8 +44,9 @@
 	}
 }
 
-.modal-intro-logo {
-	margin-bottom: 0;
+.modal-completion-logo {
+	margin-bottom: 80px;
+	margin-top: 65px;
 }
 
 .modal-intro-title {
@@ -44,6 +54,24 @@
 	margin-bottom: 0;
 }
 
+.modal-completion-subtitle {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.modal-completion-text {
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 20px;
+	font-family: $opensans_light;
+}
+
+.modal-completion-instructions {
+	font-family: $opensans_italic;
+	font-weight: 700;
+	font-size: 20px;
+	margin-top: 40px;
+}
 
 .modal-backdrop {
    background-color: $blue;
@@ -51,4 +79,5 @@
 
 .modal-lg {
 	width: 1024px;
+	height: 768px;
 }
