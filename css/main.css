@@ -241,14 +241,17 @@ h4, h5, h6, p {
   z-index: 1500; }
 
 .homepage-game-icon, .homepage-complete-icon {
-  width: 57px; }
+  width: 57px;
+  position: fixed; }
+
+.homepage-complete-icon {
+  opacity: 0.8; }
 
 .game-btn {
   height: 55px;
   width: 55px;
   border-radius: 50%;
   box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.5);
-  background-color: red;
   color: white;
   display: flex;
   align-items: center;
@@ -270,22 +273,52 @@ h4, h5, h6, p {
 .btn-1 {
   top: 370;
   right: 150; }
+  .btn-1 .homepage-game-icon {
+    top: 370;
+    right: 150; }
+  .btn-1 .homepage-complete-icon {
+    top: 370;
+    right: 150; }
 
 .btn-2 {
   top: 370;
   right: 267; }
+  .btn-2 .homepage-game-icon {
+    top: 370;
+    right: 267; }
+  .btn-2 .homepage-complete-icon {
+    top: 370;
+    right: 267; }
 
 .btn-3 {
   top: 370;
   right: 450; }
+  .btn-3 .homepage-game-icon {
+    top: 370;
+    right: 450; }
+  .btn-3 .homepage-complete-icon {
+    top: 370;
+    right: 450; }
 
 .btn-4 {
   top: 315;
   left: 350; }
+  .btn-4 .homepage-game-icon {
+    top: 315;
+    left: 350; }
+  .btn-4 .homepage-complete-icon {
+    top: 315;
+    left: 350; }
 
 .btn-5 {
   top: 220;
   left: 200; }
+  .btn-5 .homepage-game-icon {
+    top: 220;
+    left: 200; }
+  .btn-5 .homepage-complete-icon {
+    top: 220;
+    left: 200; }
 
 .progress-meter {
   height: 75px;

@@ -24,7 +24,7 @@ function checkForActiveButtons() {
     console.log('ytfd');
     $('.btn-1').removeClass('game-btn-waiting');
     $('.btn-1').addClass('game-btn-complete');
-    $('.btn-1').children(':first-child').addClass('hidden');
+    //$('.btn-1').children(':first-child').addClass('hidden');
     $('.btn-1').append('<img class="homepage-complete-icon" src="img/icons/icon-activity-complete.svg" alt="">');
 
   }
@@ -32,7 +32,7 @@ function checkForActiveButtons() {
   if( localStorage.getItem('btn_2') == 'complete') {
     $('.btn-2').removeClass('game-btn-waiting');
     $('.btn-2').addClass('game-btn-complete');
-    $('.btn-2').children(':first-child').addClass('hidden');
+    //$('.btn-2').children(':first-child').addClass('hidden');
     $('.btn-2').append('<img class="homepage-complete-icon" src="img/icons/icon-activity-complete.svg" alt="">');
 
   }
@@ -40,7 +40,7 @@ function checkForActiveButtons() {
   if( localStorage.getItem('btn_3') == 'complete') {
     $('.btn-3').removeClass('game-btn-waiting');
     $('.btn-3').addClass('game-btn-complete');
-    $('.btn-3').children(':first-child').addClass('hidden');
+    //$('.btn-3').children(':first-child').addClass('hidden');
     $('.btn-3').append('<img class="homepage-complete-icon" src="img/icons/icon-activity-complete.svg" alt="">');
 
   }
@@ -48,7 +48,7 @@ function checkForActiveButtons() {
   if( localStorage.getItem('btn_4') == 'complete') {
     $('.btn-4').removeClass('game-btn-waiting');
     $('.btn-4').addClass('game-btn-complete');
-    $('.btn-4').children(':first-child').addClass('hidden');
+    //$('.btn-4').children(':first-child').addClass('hidden');
     $('.btn-4').append('<img class="homepage-complete-icon" src="img/icons/icon-activity-complete.svg" alt="">');
 
   }
@@ -56,7 +56,7 @@ function checkForActiveButtons() {
   if( localStorage.getItem('btn_5') == 'complete') {
     $('.btn-5').removeClass('game-btn-waiting');
     $('.btn-5').addClass('game-btn-complete');
-    $('.btn-5').children(':first-child').addClass('hidden');
+    //$('.btn-5').children(':first-child').addClass('hidden');
     $('.btn-5').append('<img class="homepage-complete-icon" src="img/icons/icon-activity-complete.svg" alt="">');
   }
 };
