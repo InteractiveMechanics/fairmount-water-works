@@ -538,7 +538,7 @@ body {
 
 .watercycle-footer {
   position: absolute;
-  bottom: 75px;
+  bottom: 25px;
   right: 35px; }
 
 .draggable-widget {
@@ -564,53 +564,53 @@ body {
   height: 36px; }
 
 .draggable-widget[data-vocab="1"] {
-  top: 100px; }
-
-.droppable-widget[data-vocab="1"] {
-  top: 415px;
-  left: 268px; }
-
-.draggable-widget[data-vocab="2"] {
   top: 150px; }
 
+.droppable-widget[data-vocab="1"] {
+  top: 399px;
+  right: 222px; }
+
+.draggable-widget[data-vocab="2"] {
+  top: 200px; }
+
 .droppable-widget[data-vocab="2"] {
-  top: 140px;
-  left: 188px; }
+  top: 50px;
+  right: 95px; }
 
 .draggable-widget[data-vocab="3"] {
-  top: 200px; }
+  top: 250px; }
 
 .droppable-widget[data-vocab="3"] {
   top: 183px;
   right: 432px; }
 
 .draggable-widget[data-vocab="4"] {
-  top: 250px; }
-
-.droppable-widget[data-vocab="4"] {
-  bottom: 74px;
-  right: 265px; }
-
-.draggable-widget[data-vocab="5"] {
   top: 300px; }
 
-.droppable-widget[data-vocab="5"] {
-  top: 110px;
-  right: 238px; }
+.droppable-widget[data-vocab="4"] {
+  bottom: 15px;
+  left: 470px; }
 
-.draggable-widget[data-vocab="6"] {
+.draggable-widget[data-vocab="5"] {
   top: 350px; }
 
-.droppable-widget[data-vocab="6"] {
-  top: 285px;
-  left: 39px; }
+.droppable-widget[data-vocab="5"] {
+  top: 336px;
+  right: 403px; }
 
-.draggable-widget[data-vocab="7"] {
+.draggable-widget[data-vocab="6"] {
   top: 400px; }
 
+.droppable-widget[data-vocab="6"] {
+  top: 440px;
+  left: 262px; }
+
+.draggable-widget[data-vocab="7"] {
+  top: 450px; }
+
 .droppable-widget[data-vocab="7"] {
-  bottom: 213px;
-  right: 94px; }
+  bottom: 123px;
+  right: 230px; }
 
 .testing {
   background-color: #ff0055; }

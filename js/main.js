@@ -102,7 +102,7 @@ function tallyScore() {
 };
 
 
-// invisibile page reload 
+// invisibile page reload on desktop
 $('.magic-button').mousedown(function(e) {
     clearTimeout(this.downTimer);
     this.downTimer = setTimeout(function() {
@@ -113,6 +113,19 @@ $('.magic-button').mousedown(function(e) {
 }).mouseup(function(e) {
     clearTimeout(this.downTimer);
 });
+
+//invisible page reload on touch 
+$('.magic-button').bind('touchstart', function(e) {
+    clearTimeout(this.downTimer);
+    this.downTimer = setTimeout(function() {
+        // alert('mousedown > 3 sec');
+        location.reload();
+        localStorage.clear('.modal-content-intro');   
+    }, 3000);
+}).bind('touchend', function(e) {
+    clearTimeout(this.downTimer);
+});
+
 
 
 // tooltip shows on page load
