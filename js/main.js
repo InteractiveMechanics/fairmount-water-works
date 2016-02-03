@@ -17,6 +17,7 @@ $(document).ready(function() {
 
   watercycle();
   tallyScore();
+  pollution();
 });
 
 function checkForActiveButtons() {
@@ -237,4 +238,10 @@ $('.waterwheel-button').click(function() {
 
 
 
-
+function pollution() {
+  $('.pollution-element').click(function() {
+    var pollutionNumber = Number($(this).data('element'));
+    $(this).addClass('hidden');
+    $('.pollution-container').find('.clean-element[data-element="' + pollutionNumber + '"]' ).removeClass('hidden');
+  });
+}

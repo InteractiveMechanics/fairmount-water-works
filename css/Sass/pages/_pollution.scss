@@ -1,0 +1,90 @@
+.pollution-container {
+	height: 768px;
+	position: relative;
+	background-size: 1024px 768px;
+	background-image: url(../img/background-activity-05@2x.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.pollution-header {
+	@include game-header();
+}
+
+.pollution-footer {
+	position: absolute;
+	bottom: 75px;
+	right: 35px;
+}
+
+.pollution-element, .clean-element {
+	position: absolute;
+} 
+
+.pollution-element[data-element="1"] {
+	top: 382px;
+	left: 88px;
+}
+
+.clean-element[data-element="1"] {
+	top: 413px;
+	left: 88px;
+}
+
+
+.pollution-element[data-element="2"] {
+	top: 434px;
+	left: 292px;
+}
+
+.clean-element[data-element="2"] {
+	top: 328px;
+	left: 300px;
+}
+
+
+.pollution-element[data-element="3"] {
+	top: 568px;
+	left: 249px;
+}
+
+.clean-element[data-element="3"] {
+	top: 515px;
+	left: 235px;
+}
+
+.pollution-element[data-element="4"] {
+	top: 599px;
+	left: 658px;
+}
+
+.clean-element[data-element="4"] {
+	top: 596px;
+	left: 656px;
+}
+
+.pollution-element[data-element="5"] {
+	top: 348px;
+	left: 686px;
+}
+
+.clean-element[data-element="5"] {
+	top: 374px;
+	left: 677px;
+}
+
+.pollution-element[data-element="6"] {
+	top: 82px;
+	left: 563px;
+}
+
+.clean-element[data-element="6"] {
+	top: 27px;
+	left: 590px;
+}
+
+
+.pollution-element-img, .clean-element-img {
+	width: 50%;
+}
+
