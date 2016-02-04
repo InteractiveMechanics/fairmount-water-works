@@ -1,10 +1,6 @@
 .pollution-container {
-	height: 768px;
-	position: relative;
-	background-size: 1024px 768px;
+	@include game-container();
 	background-image: url(../img/background-activity-05@2x.png);
-	background-repeat: no-repeat;
-	background-position: center center;
 }
 
 .pollution-header {

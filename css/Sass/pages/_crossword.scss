@@ -4,18 +4,13 @@ body {
 }
 
 .crossword-container {
-	position: relative;
+	@include game-container();
 	background-image: url(../img/activity-01-background@2x.jpg);
-	background-size: 1024px 768px;	
-	height: 768px;
-	background-repeat: no-repeat;
-	background-position: center center;
 }
 
 .crossword-header {
 	@include game-header();
 }
-
 
 .crossword-footer {
 	position: absolute;
@@ -143,6 +138,9 @@ body {
 .tooltip {
 	font-size: 18px;
 	font-family: $opensans_regular;
+	&:hover {
+		animation: pulse 1s;
+	}
 }
 
 .tooltip.right .tooltip-arrow {

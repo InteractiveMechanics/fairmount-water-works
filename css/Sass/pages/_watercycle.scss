@@ -1,17 +1,7 @@
 .watercycle-container {
-	height: 768px;
-	position: relative;
+	@include game-container();
 	background-image: url(../img/background-activity-02@2x.png);
-	background-size: 1024px 768px;
-	background-repeat: no-repeat;
-	background-position: center center;
 }
-
-// .watercycle-container {
-// 	position: relative;
-// 	background-size: 1024px 768px;
-// 	height: 768px;
-// }
 
 .watercycle-header {
 	@include game-header();

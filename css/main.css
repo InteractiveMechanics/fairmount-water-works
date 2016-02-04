@@ -67,6 +67,24 @@ footer {
     .game-footer:hover .right-arrow {
       fill: #f1f2f2; }
 
+.game-footer-crossword {
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 8px 17px;
+  border: 3px solid #212121;
+  color: #212121;
+  float: right;
+  font-family: "bebas", Helvetica, Arial, sans-serif; }
+  .game-footer-crossword .right-arrow {
+    fill: #212121; }
+  .game-footer-crossword:hover {
+    border: 2px solid #212121;
+    background-color: #212121;
+    color: #f1f2f2;
+    animation: pulse 0.5s; }
+    .game-footer-crossword:hover .right-arrow {
+      fill: #f1f2f2; }
+
 .modal-content-intro, .modal-content-completion {
   text-align: center;
   background-color: rgba(25, 25, 25, 0.25);
@@ -265,7 +283,9 @@ footer {
 
 .game-btn-waiting:hover {
   background-color: white;
-  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.9); }
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.9);
+  -webkit-animation: rubberBand 1s;
+  animation: rubberBand 1s; }
 
 .game-btn-complete {
   background-color: #00a550; }
@@ -327,11 +347,11 @@ body {
 
 .crossword-container {
   position: relative;
-  background-image: url(../img/activity-01-background@2x.jpg);
   background-size: 1024px 768px;
   height: 768px;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  background-image: url(../img/activity-01-background@2x.jpg); }
 
 .crossword-header {
   position: absolute;
@@ -454,6 +474,8 @@ body {
 .tooltip {
   font-size: 18px;
   font-family: "opensans_regular", Helvetica, Arial, sans-serif; }
+  .tooltip:hover {
+    animation: pulse 1s; }
 
 .tooltip.right .tooltip-arrow {
   top: 50% !important; }
@@ -483,12 +505,12 @@ body {
   margin-top: 3px; }
 
 .watercycle-container {
-  height: 768px;
   position: relative;
-  background-image: url(../img/background-activity-02@2x.png);
   background-size: 1024px 768px;
+  height: 768px;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  background-image: url(../img/background-activity-02@2x.png); }
 
 .watercycle-header {
   position: absolute;
@@ -598,12 +620,12 @@ body {
   visibility: hidden; }
 
 .wateruse-container {
-  height: 768px;
   position: relative;
   background-size: 1024px 768px;
-  background-image: url(../img/background-activity-03@2x.png);
+  height: 768px;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  background-image: url(../img/background-activity-03@2x.png); }
 
 .wateruse-header {
   position: absolute;
@@ -663,12 +685,11 @@ body {
   right: 50px; }
 
 .waterwheel-container {
-  height: 768px;
   position: relative;
   background-size: 1024px 768px;
+  height: 768px;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #777777; }
+  background-position: center center; }
 
 .waterwheel-header {
   position: absolute;
@@ -726,12 +747,12 @@ body {
   fill: #f1f2f2; }
 
 .pollution-container {
-  height: 768px;
   position: relative;
   background-size: 1024px 768px;
-  background-image: url(../img/background-activity-05@2x.png);
+  height: 768px;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  background-image: url(../img/background-activity-05@2x.png); }
 
 .pollution-header {
   position: absolute;

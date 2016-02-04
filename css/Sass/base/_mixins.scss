@@ -21,6 +21,15 @@
 	}
 }
 
+@mixin game-container {
+	position: relative;
+	background-size: 1024px 768px;	
+	height: 768px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
 @mixin crossword-letter {
 	font-size: 24px;
 	text-align: center;

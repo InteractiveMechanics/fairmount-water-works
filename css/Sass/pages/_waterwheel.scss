@@ -1,11 +1,6 @@
 .waterwheel-container {
-	height: 768px;
-	position: relative;
+	@include game-container();
 	//background-image: url(../img/background-activity-04@2x.png);
-	background-size: 1024px 768px;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #777777;
 }
 
 .waterwheel-header {
