@@ -241,7 +241,11 @@ footer {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1500; }
+  z-index: 1500;
+  padding: 25px;
+  color: transparent;
+  background-color: transparent;
+  border-color: transparent; }
 
 .homepage-game-icon, .homepage-complete-icon {
   width: 55px;
