@@ -3,7 +3,7 @@
 		{
 			
 			"clueNumber": 1,
-			"question": "The cutting down of too many trees in the Schuykill River Watershed led to the  1869 _____",
+			"question": "The cutting down of too many trees in the Schuykill River Watershed led to the  1869 _ _ _ _.",
 			"options": ["war", "flood", "draught", "storm"],
 			"answer": "flood"
 		},
@@ -21,6 +21,15 @@
 			"options": ["boats", "tides", "wells", "fossil fuels"],
 			"answer": "tides"
 		},
+
+		{
+			
+			"clueNumber": 4,
+			"question": "In 1876, these held water where the Philadelphia Museum of Art stands today.",
+			"options": ["reservoirs", "storehouses", "catchments", "watertowers"],
+			"answer": "reservoirs"
+		},
+
 		{
 			
 			"clueNumber": 5,
@@ -31,7 +40,7 @@
 		{
 			
 			"clueNumber": 6,
-			"question": "The ______ of a stream is all the land that sheds water to that stream when it rains.",
+			"question": "The _ _ _ _ of a stream is all the land that sheds water to that stream when it rains.",
 			"options": ["habitat", "watershed", "environment", "tributary"],
 			"answer": "watershed"
 		},
@@ -52,19 +61,19 @@
 		{
 			
 			"clueNumber": 9,
-			"question": "Rain that goes down the storm drain can end up in the ______",
+			"question": "Rain that goes down the storm drain can end up in the _ _ _ _.",
 			"options": ["ocean", "sewer", "floodplain", "river"],
 			"answer": "river"
 		},
 		{
 			"clueNumber": 10,
-			"question": "A healthy Delaware Estuary provides a unique ______ for wildlife, such as horseshoe crab and migratory birds",
+			"question": "A healthy Delaware Estuary provides a unique _ _ _ _ for wildlife, such as horseshoe crab and migratory birds.",
 			"options": ["home", "watershed", "habitat", "climate"],
 			"answer": "habitat"
 		},
 		{
 			"clueNumber": 11,
-			"question": "Today's underground sewers used to be natural _____",
+			"question": "Today's underground sewers used to be natural _ _ _ _.",
 			"options": ["streams", "tunnels", "springs", "caves"],
 			"answer": "streams"
 		}

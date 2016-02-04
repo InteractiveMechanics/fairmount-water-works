@@ -139,7 +139,7 @@ footer {
   overflow-y: visible; }
 
 .trivia-modal-container {
-  top: 100px;
+  top: 140px;
   left: 290px;
   z-index: 2000;
   position: absolute; }
@@ -508,6 +508,12 @@ body {
 
 .shared-letter {
   color: transparent; }
+
+.trivia-correct {
+  width: 15px;
+  position: absolute;
+  right: 15px;
+  margin-top: 3px; }
 
 .watercycle-container {
   height: 768px;

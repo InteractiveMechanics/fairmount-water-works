@@ -122,10 +122,11 @@ $('.magic-button').bind('touchstart', function(e) {
 $('[data-toggle=tooltip]').tooltip({trigger: 'click', html: true}).tooltip('show');
 
 //crossword modal shows when user clicks on tooltip
-$('[role=tooltip]').click(function() {
+$('[role=tooltip]').click(function(event) {
     var clue = $(this)[0].textContent;
     $('.modal-content').html($('.clue-' + clue).html());
     $(this).attr('data-toggle', 'modal').attr('data-target', '#crosswordModal');
+    $(this).addClass('disabled');
 });
 
 //crossword answer visible when next button clicked
@@ -145,7 +146,7 @@ $('#crosswordModal').on('hidden.bs.modal', function() {
     $($crosswordClueClass).tooltip('show')
       .attr('data-original-title', '<img src="img/icons/icon-correct2.svg">')
       .tooltip('fixTitle')
-      .tooltip('show');
+      .tooltip('show')
 });
 
 // handlebars - crossword trivia
@@ -154,7 +155,7 @@ $(function () {
   var template = Handlebars.compile(raw_template);
   var placeHolder = $(".modal-data");
 
-  $.get("../data/crossword.json",function(data,status,xhr){
+  $.get("./data/crossword.json",function(data,status,xhr){
         $.each(data,function(index,element){
             console.log(data);
         
@@ -171,6 +172,7 @@ $(document).delegate(".modal-trivia-button", "click", function(event){
     var answer = $('.answer').html().trim();
     if (button == answer) {
       $(this).addClass('correct-answer');
+      $(this).append('<img class="trivia-correct icon-correct" src="../img/icons/icon-correct-green.svg" alt="correct icon">');
       $(this).parents('.options').siblings('.modal-trivia-next-button').attr('disabled', false);
     } else {
       $(this).addClass('disabled');

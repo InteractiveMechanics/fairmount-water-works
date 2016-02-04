@@ -4,12 +4,10 @@
 }
 
 .trivia-modal-container {
-	top: 100px;
+	top: 140px;
 	left: 290px;
 	z-index: 2000;
 	position: absolute;
-	// overflow-x: visible;
-	// overflow-y: visible;
 }
 
 .modal-backdrop {
@@ -18,7 +16,6 @@
 
 .modal-trivia-dialog {
 	margin: 0;
-	// height: 768px;
 }
 
 
