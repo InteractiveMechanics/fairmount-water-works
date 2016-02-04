@@ -9,23 +9,18 @@ $(document).ready(function(event) {
         $('#myModal').modal('show');
         localStorage.setItem('modal_content_intro','show');
     }
-}); 
 
-// check for active buttons
-$(document).ready(function() {
   checkForActiveButtons();
-
   watercycle();
   tallyScore();
   pollution();
-});
+}); 
 
+//homepage 
 function checkForActiveButtons() {
   if( localStorage.getItem('btn_1') == 'complete') {
-    console.log('ytfd');
     $('.btn-1').removeClass('game-btn-waiting');
     $('.btn-1').addClass('game-btn-complete');
-    //$('.btn-1').children(':first-child').addClass('hidden');
     $('.btn-1').append('<img class="homepage-complete-icon" src="img/icons/icon-activity-complete.svg" alt="">');
 
   }
@@ -33,7 +28,6 @@ function checkForActiveButtons() {
   if( localStorage.getItem('btn_2') == 'complete') {
     $('.btn-2').removeClass('game-btn-waiting');
     $('.btn-2').addClass('game-btn-complete');
-    //$('.btn-2').children(':first-child').addClass('hidden');
     $('.btn-2').append('<img class="homepage-complete-icon" src="img/icons/icon-activity-complete.svg" alt="">');
 
   }
@@ -41,7 +35,6 @@ function checkForActiveButtons() {
   if( localStorage.getItem('btn_3') == 'complete') {
     $('.btn-3').removeClass('game-btn-waiting');
     $('.btn-3').addClass('game-btn-complete');
-    //$('.btn-3').children(':first-child').addClass('hidden');
     $('.btn-3').append('<img class="homepage-complete-icon" src="img/icons/icon-activity-complete.svg" alt="">');
 
   }
@@ -49,7 +42,6 @@ function checkForActiveButtons() {
   if( localStorage.getItem('btn_4') == 'complete') {
     $('.btn-4').removeClass('game-btn-waiting');
     $('.btn-4').addClass('game-btn-complete');
-    //$('.btn-4').children(':first-child').addClass('hidden');
     $('.btn-4').append('<img class="homepage-complete-icon" src="img/icons/icon-activity-complete.svg" alt="">');
 
   }
@@ -57,13 +49,11 @@ function checkForActiveButtons() {
   if( localStorage.getItem('btn_5') == 'complete') {
     $('.btn-5').removeClass('game-btn-waiting');
     $('.btn-5').addClass('game-btn-complete');
-    //$('.btn-5').children(':first-child').addClass('hidden');
     $('.btn-5').append('<img class="homepage-complete-icon" src="img/icons/icon-activity-complete.svg" alt="">');
   }
 };
 
-// click events for each button
-
+// homepage: click events for each button
 $('.continue-btn-game-1').click(function() {
   localStorage.setItem('btn_1', 'complete');
 })
@@ -85,7 +75,7 @@ $('.continue-btn-game-5').click(function() {
 })
 
 
-// if all buttons are green, completion modal displays
+// homepage: if all buttons are green, completion modal displays
 $(function(){
 		if (!$('.game-btn').not('.game-btn-complete').length) {
 			$('#myModal').modal('show');
@@ -95,8 +85,7 @@ $(function(){
 		}
 	});
 
-//
-
+// hompeage: progress meter
 function tallyScore() {
   var score = $('.game-btn-complete').length;
   $('.progress-meter').attr('data-score', score);
@@ -129,7 +118,7 @@ $('.magic-button').bind('touchstart', function(e) {
 
 
 
-// tooltip shows on page load
+// crossword tooltips show on page load
 $('[data-toggle=tooltip]').tooltip({trigger: 'click', html: true}).tooltip('show');
 
 //crossword modal shows when user clicks on tooltip
@@ -137,7 +126,6 @@ $('[role=tooltip]').click(function() {
     var clue = $(this)[0].textContent;
     $('.modal-content').html($('.clue-' + clue).html());
     $(this).attr('data-toggle', 'modal').attr('data-target', '#crosswordModal');
-    //$('.modal-trivia-next-button').hide();
 });
 
 //crossword answer visible when next button clicked
@@ -159,9 +147,6 @@ $('#crosswordModal').on('hidden.bs.modal', function() {
       .tooltip('fixTitle')
       .tooltip('show');
 });
-
-
-
 
 // handlebars - crossword trivia
 $(function () {
@@ -229,6 +214,14 @@ function watercycle() {
 };
 
 $('.waterwheel-button').click(function() {
+    alert('your function is working!');
+    $(this).addClass('hidden');
+    $('#myVideo').get(0).play();
+    $('.waterwheel-header').addClass('hidden');
+    $('.continue-btn-game-4').removeClass('hidden');
+});
+
+$('.waterwheel-button').bind('touchstart', function(e) {
     alert('your function is working!');
     $(this).addClass('hidden');
     $('#myVideo').get(0).play();

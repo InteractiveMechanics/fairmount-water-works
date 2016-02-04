@@ -49,6 +49,9 @@ h1, h2, h3 {
 h4, h5, h6, p {
   font-family: "opensans_regular", Helvetica, Arial, sans-serif; }
 
+footer {
+  position: relative; }
+
 .game-footer {
   border-radius: 30px;
   font-size: 18px;
@@ -385,7 +388,7 @@ body {
 .crossword-footer {
   position: absolute;
   bottom: 40px;
-  right: 10px; }
+  right: 20px; }
 
 .crosswordModal {
   position: absolute;
@@ -466,9 +469,6 @@ body {
   margin: 0;
   height: 45px; }
 
-.modal-data {
-  visibility: hidden; }
-
 .answer {
   visibility: hidden; }
 
@@ -539,7 +539,7 @@ body {
 .watercycle-footer {
   position: absolute;
   bottom: 25px;
-  right: 35px; }
+  right: 20px; }
 
 .draggable-widget {
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
@@ -653,8 +653,8 @@ body {
 
 .wateruse-footer {
   position: absolute;
-  bottom: 75px;
-  right: 35px; }
+  bottom: 40px;
+  right: 20px; }
 
 .wateruse-form {
   width: 275px;
@@ -720,7 +720,7 @@ body {
 .waterwheel-footer {
   position: absolute;
   bottom: 25px;
-  right: 35px; }
+  right: 25px; }
 
 .video-poster {
   width: 1024px;
@@ -781,8 +781,8 @@ body {
 
 .pollution-footer {
   position: absolute;
-  bottom: 75px;
-  right: 35px; }
+  bottom: 40px;
+  right: 20px; }
 
 .pollution-element, .clean-element {
   position: absolute; }
