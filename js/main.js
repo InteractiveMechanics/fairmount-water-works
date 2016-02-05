@@ -199,11 +199,11 @@ function crosswordLogic() {
         var answer = $('.answer').html().trim();
         if (button == answer) {
           $(this).addClass('correct-answer');
-          $(this).append('<img class="trivia-icon icon-correct" src="../img/icons/icon-correct-green.svg" alt="correct icon">');
+          $(this).append('<img class="trivia-icon icon-correct" src="img/icons/icon-correct-green.svg" alt="correct icon">');
           $(this).parents('.options').siblings('.modal-trivia-next-button').attr('disabled', false);
         } else {
           $(this).addClass('disabled');
-          $(this).append('<img class="trivia-icon icon-incorrect" src="../img/icons/icon-incorrect-red.svg" alt="incorrect icon">');
+          $(this).append('<img class="trivia-icon icon-incorrect" src="img/icons/icon-incorrect-red.svg" alt="incorrect icon">');
         }   
      });
 }
@@ -226,7 +226,7 @@ function watercycle() {
     drop: function( event, ui ) {
         var droppableNumber = $(this).data('vocab');
         if(ui.draggable.is('[data-vocab="' + droppableNumber + '"]')) {
-          ui.draggable.append('<img class="watercycle-icon icon-correct" src="../img/icons/icon-correct-green.svg" alt="correct icon">');
+          ui.draggable.append('<img class="watercycle-icon icon-correct" src="img/icons/icon-correct-green.svg" alt="correct icon">');
           ui.draggable.children(":nth-child(2)").addClass('hidden');
           ui.draggable.find('.icon-incorrect').remove();
           ui.draggable.draggable('option', 'disabled', true);
@@ -234,7 +234,7 @@ function watercycle() {
           if (ui.draggable.find('img.icon-incorrect').length !=0) {
             // do nothing
           } else {
-          ui.draggable.append('<img class="watercycle-icon icon-incorrect" src="../img/icons/icon-incorrect-red.svg" alt="incorrect icon">')
+          ui.draggable.append('<img class="watercycle-icon icon-incorrect" src="img/icons/icon-incorrect-red.svg" alt="incorrect icon">')
           ui.draggable.children(":nth-child(2)").addClass('hidden');
 
           }
