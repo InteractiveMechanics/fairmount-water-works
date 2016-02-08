@@ -161,7 +161,7 @@ function showCrosswordAnswer() {
         var $crosswordClueClass = ".crossword-clue-" + $modalClueName;
         
 
-        $($crosswordClueClass).find('>:first-child').removeClass('crossword-clue-hidden');
+        $($crosswordClueClass).find('>:first-child').removeClass('crossword-clue-hidden').addClass('animated fadeIn');
         $($crosswordClueClass).siblings('.tooltip').children('.tooltip-inner').addClass('tooltip-correct');
         $($crosswordClueClass).siblings('.top').children('.tooltip-arrow').addClass('tooltip-top-arrow-correct');
         $($crosswordClueClass).siblings('.right').children('.tooltip-arrow').addClass('tooltip-right-arrow-correct');
@@ -198,11 +198,11 @@ function crosswordLogic() {
         var button = $(this).text().trim();
         var answer = $('.answer').html().trim();
         if (button == answer) {
-          $(this).addClass('correct-answer');
+          $(this).addClass('correct-answer animated flash');
           $(this).append('<img class="trivia-icon icon-correct" src="img/icons/icon-correct-green.svg" alt="correct icon">');
           $(this).parents('.options').siblings('.modal-trivia-next-button').attr('disabled', false);
         } else {
-          $(this).addClass('disabled');
+          $(this).addClass('disabled animated shake');
           $(this).append('<img class="trivia-icon icon-incorrect" src="img/icons/icon-incorrect-red.svg" alt="incorrect icon">');
         }   
      });
@@ -265,6 +265,6 @@ function pollution() {
   $('.pollution-element').click(function() {
     var pollutionNumber = Number($(this).data('element'));
     $(this).addClass('hidden');
-    $('.pollution-container').find('.clean-element[data-element="' + pollutionNumber + '"]' ).removeClass('hidden');
+    $('.pollution-container').find('.clean-element[data-element="' + pollutionNumber + '"]' ).removeClass('hidden').addClass('animated fadeIn');
   });
 }
