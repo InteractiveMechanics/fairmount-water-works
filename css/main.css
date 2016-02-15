@@ -30,6 +30,9 @@ a {
   a:hover {
     text-decoration: none; }
 
+body {
+  animation: fadeIn 1.15s 1 forwards; }
+
 .page-icon {
   height: 80px;
   width: 80px;
@@ -329,17 +332,17 @@ footer {
   left: 200; }
 
 .progress-meter {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   position: absolute;
-  bottom: 50px;
-  left: 50px;
-  background-size: 100px 100px;
+  bottom: 20px;
+  left: 20px;
+  background-size: 150px 150px;
   background-position: center center; }
 
 .progress-meter-icon {
-  width: 100px; }
+  width: 150px; }
 
 .progress-meter[data-score="0"] {
   background-image: url(../img/progress/progress-00@2x.png); }
@@ -389,6 +392,9 @@ body {
   .crossword-header .page-title {
     display: inline-block;
     margin-left: 20px; }
+  .crossword-header .homepage-page-title {
+    display: inline-block;
+    padding-top: 15px; }
 
 .crossword-footer {
   position: absolute;
@@ -548,6 +554,9 @@ body {
   .watercycle-header .page-title {
     display: inline-block;
     margin-left: 20px; }
+  .watercycle-header .homepage-page-title {
+    display: inline-block;
+    padding-top: 15px; }
 
 .watercycle-footer {
   position: absolute;
@@ -663,6 +672,9 @@ body {
   .wateruse-header .page-title {
     display: inline-block;
     margin-left: 20px; }
+  .wateruse-header .homepage-page-title {
+    display: inline-block;
+    padding-top: 15px; }
 
 .wateruse-footer {
   position: absolute;
@@ -728,6 +740,9 @@ body {
   .waterwheel-header .page-title {
     display: inline-block;
     margin-left: 20px; }
+  .waterwheel-header .homepage-page-title {
+    display: inline-block;
+    padding-top: 15px; }
 
 .waterwheel-footer {
   position: absolute;
@@ -790,6 +805,9 @@ body {
   .pollution-header .page-title {
     display: inline-block;
     margin-left: 20px; }
+  .pollution-header .homepage-page-title {
+    display: inline-block;
+    padding-top: 15px; }
 
 .pollution-footer {
   position: absolute;

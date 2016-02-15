@@ -101,6 +101,7 @@ body {
 	@include crossword-letter;
 	display: inline;
 	margin: 13px;
+	// width: 45px; try doing this to make the spacing between characters even
 	padding: 0;
 }
 

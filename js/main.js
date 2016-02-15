@@ -23,7 +23,7 @@
     //activity 5: click to reveal
     pollution();
 
-    // get JSON for activity 2
+    // get JSON for activity 2 - putting this with the other homepage functions breaks things
     getCrosswordTrivia();
 
 }); 

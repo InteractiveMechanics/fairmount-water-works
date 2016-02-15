@@ -81,18 +81,18 @@
 }
 
 .progress-meter {
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
 	border-radius: 50%;
 	position: absolute;
-	bottom: 50px;
-	left: 50px;
-	background-size: 100px 100px;
+	bottom: 20px;
+	left: 20px;
+	background-size: 150px 150px;
 	background-position: center center;
 }
 
 .progress-meter-icon {
-	width: 100px;
+	width: 150px;
 }
 
 .progress-meter[data-score="0"] {
