@@ -178,7 +178,7 @@ footer {
   overflow-y: visible; }
 
 .trivia-modal-container {
-  top: 140px;
+  top: 100px;
   left: 290px;
   z-index: 2000;
   position: absolute; }
@@ -234,16 +234,18 @@ footer {
   border-radius: 4px; }
 
 .btn-group-vertical > .btn {
-  width: 320px; }
+  width: 350px; }
 
 .modal-trivia-button {
   margin-top: 7px;
   margin-bottom: 7px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   text-transform: uppercase;
   font-size: 18px;
-  color: #1b75bb; }
+  color: #1b75bb;
+  font-family: "opensans_regular", Helvetica, Arial, sans-serif;
+  letter-spacing: 2px; }
 
 .modal-trivia-next-button {
   display: block;
@@ -372,7 +374,7 @@ body {
   height: 768px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../img/activity-01-background@2x.jpg); }
+  background-image: url(../img/background-activity-01@2x.png); }
 
 .crossword-header {
   position: absolute;
@@ -401,6 +403,9 @@ body {
   bottom: 40px;
   right: 20px; }
 
+.crossword-clue-container-across {
+  margin-right: 7px; }
+
 .crosswordModal {
   position: absolute;
   top: 200;
@@ -409,7 +414,7 @@ body {
 .crossword-clue-1 {
   position: absolute;
   top: 101px;
-  right: 319px; }
+  right: 322px; }
 
 .crossword-clue-2 {
   position: absolute;
@@ -419,46 +424,46 @@ body {
 .crossword-clue-3 {
   position: absolute;
   top: 191px;
-  left: 186px; }
+  left: 188px; }
 
 .crossword-clue-4 {
   position: absolute;
   top: 191px;
-  right: 455px; }
+  right: 457px; }
 
 .crossword-clue-5 {
   position: absolute;
   top: 236px;
-  left: 369px; }
+  left: 365px; }
 
 .crossword-clue-6 {
   position: absolute;
   top: 281px;
-  left: 309px; }
+  left: 310px; }
 
 .crossword-clue-7 {
   position: absolute;
   top: 281px;
-  left: 457px; }
+  left: 455px; }
 
 .crossword-clue-8 {
   position: absolute;
   top: 371px;
-  left: 179px; }
+  left: 177px; }
 
 .crossword-clue-9 {
   position: absolute;
   top: 371px;
-  right: 278px; }
+  right: 269px; }
 
 .crossword-clue-10 {
   position: absolute;
-  left: 98px;
+  left: 87px;
   bottom: 138px; }
 
 .crossword-clue-11 {
   position: absolute;
-  right: 177px;
+  right: 179px;
   top: 596px; }
 
 .crossword-down {
@@ -468,8 +473,9 @@ body {
   font-size: 24px;
   text-align: center;
   text-transform: uppercase;
-  display: inline;
-  margin: 13px;
+  display: inline-block;
+  margin: 0px;
+  width: 41px;
   padding: 0; }
 
 .crossword-letter-down {
@@ -527,6 +533,14 @@ body {
   position: absolute;
   right: 15px;
   margin-top: 3px; }
+
+.wide-letter {
+  position: relative;
+  left: 3px; }
+
+.adjustment1 {
+  position: relative;
+  left: 2px; }
 
 .watercycle-container {
   position: relative;
