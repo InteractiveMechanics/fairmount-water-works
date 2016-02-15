@@ -217,7 +217,7 @@ function watercycle() {
 
   $('.draggable-widget').draggable({ 
     snap: '.droppable-widget', 
-    snapMode: 'both',
+    snapMode: 'interior',
     cursor: 'move',
     cursorAt: {top: 10, left: 100}
     });
