@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" href="css/main.css">
 
+	<script type="text/javascript" src="http://www.kioskproapp.com/api/new/kiosk_functions.js"></script>
+
 </head>
 <body>
 
@@ -27,7 +29,7 @@
 			</div>
 			<div class="page-title">
 				<h1>Urban Water Use Cycle</h1>
-				<p>Fill in the boxes to answer the questions</p>
+				<p>Fill in the boxes to answer the questions.</p>
 			</div>
 		</header>
 	</div>
@@ -35,10 +37,10 @@
 	<div class="wateruse-form form-1">
 		<form>
 			<div class="form-group">
-				<p class="wateruse-form-heading">List 3 things removed from the river in the drinking water treatment plant.</p>
-				<input type="text" class="form-control wateruse-input" placeholder="Example #1">
-				<input type="text" class="form-control wateruse-input" placeholder="Example #2">
-				<input type="text" class="form-control wateruse-input" placeholder="Example #3">
+				<p class="wateruse-form-heading">List 3 things that PW removes from waste water before returning to the river.</p>
+				<input type="text" class="form-control wateruse-input" name="wasteWater_1" placeholder="Example #1">
+				<input type="text" class="form-control wateruse-input" name="wasteWater_2"placeholder="Example #2">
+				<input type="text" class="form-control wateruse-input" name="wasteWater_3"placeholder="Example #3">
 			</div>
 		</form>	
 	</div>
@@ -47,9 +49,9 @@
 		<form>
 			<div class="form-group">
 				<p class="wateruse-form-heading">List 3 of your favorite ways you use clean water.</p>
-				<input type="text" class="form-control wateruse-input" placeholder="Example #1">
-				<input type="text" class="form-control wateruse-input" placeholder="Example #2">
-				<input type="text" class="form-control wateruse-input" placeholder="Example #3">
+				<input type="text" class="form-control wateruse-input" name="cleanWater_1" placeholder="Example #1">
+				<input type="text" class="form-control wateruse-input" name="cleanWater_2" placeholder="Example #2">
+				<input type="text" class="form-control wateruse-input" name="cleanWater_3" placeholder="Example #3">
 			</div>
 		</form>	
 	</div>
@@ -57,10 +59,10 @@
 	<div class="wateruse-form form-3">
 		<form>
 			<div class="form-group">
-				<p class="wateruse-form-heading">List 3 things that PW removes from wasterwater before returning to the river.</p>
-				<input type="text" class="form-control wateruse-input" placeholder="Example #1">
-				<input type="text" class="form-control wateruse-input" placeholder="Example #2">
-				<input type="text" class="form-control wateruse-input" placeholder="Example #3">
+				<p class="wateruse-form-heading">List 3 things removed from the river in the drinking water treatment plant.</p>
+				<input type="text" class="form-control wateruse-input" name="drinkingWater_1" placeholder="Example #1">
+				<input type="text" class="form-control wateruse-input" name="drinkingWater_2" placeholder="Example #2">
+				<input type="text" class="form-control wateruse-input" name="drinkingWater_3" placeholder="Example #3">
 			</div>
 		</form>	
 	</div>
@@ -100,6 +102,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<!-- // <script type="text/javascript" src="http://www.kioskproapp.com/api/new/kiosk_functions.js"></script> -->
 	<script src="js/main.js"></script>
 </body>
 </html>	

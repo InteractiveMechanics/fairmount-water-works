@@ -1,5 +1,7 @@
- $(document).ready(function(event) {
-    
+
+var data = {"trivia":[{"clueNumber":1,"question":"The cutting down of too many trees in the Schuykill River Watershed led to the  1869 _ _ _ _.","options":["war","flood","draught","storm"],"answer":"flood"},{"clueNumber":2,"question":"The Schuykill River Watershed is part of this larger River Basin.","options":["Mississippi","Missouri","Delaware","Nile"],"answer":"Delaware"},{"clueNumber":3,"question":"Twice a day the river levels are high and low because of these.","options":["boats","tides","wells","fossil fuels"],"answer":"tides"},{"clueNumber":4,"question":"In 1876, these held water where the Philadelphia Museum of Art stands today.","options":["reservoirs","storehouses","catchments","watertowers"],"answer":"reservoirs"},{"clueNumber":5,"question":"This park helps protect the city's water supply.","options":["Rittenhouse","Clark","Franklin","Fairmount"],"answer":"Fairmount"},{"clueNumber":6,"question":"The _ _ _ _ of a stream is all the land that sheds water to that stream when it rains.","options":["habitat","watershed","environment","tributary"],"answer":"watershed"},{"clueNumber":7,"question":"Where the river meets the sea.","options":["lagoon","estuary","marsh","harbor"],"answer":"estuary"},{"clueNumber":8,"question":"Three thousand miles of these underground pipes carry waste.","options":["sewer","drain","gas","organ"],"answer":"sewer"},{"clueNumber":9,"question":"Rain that goes down the storm drain can end up in the _ _ _ _.","options":["ocean","sewer","floodplain","river"],"answer":"river"},{"clueNumber":10,"question":"A healthy Delaware Estuary provides a unique _ _ _ _ for wildlife, such as horseshoe crab and migratory birds.","options":["home","watershed","habitat","climate"],"answer":"habitat"},{"clueNumber":11,"question":"Today's underground sewers used to be natural _ _ _ _.","options":["streams","tunnels","springs","caves"],"answer":"streams"}]};
+     
+$(document).ready(function(event) {
     //homepage
     introModal();
     checkForActiveButtons();
@@ -15,7 +17,7 @@
     //activity 2: drag-and-drop
     watercycle();
 
-    //activity 3: no js
+    //activity 3: free input
 
     //activity 4: video
     waterwheel();
@@ -27,6 +29,9 @@
     getCrosswordTrivia();
 
 }); 
+
+
+
 
  
 // hompepage intro modal show only once
@@ -96,6 +101,8 @@ $('.continue-btn-game-2').click(function() {
 })
 
 $('.continue-btn-game-3').click(function() {
+  saveCSV();
+  console.log('drinkingWaterData1');
   localStorage.setItem('btn_3', 'complete');
 })
 
@@ -180,7 +187,7 @@ function getCrosswordTrivia() {
       var template = Handlebars.compile(raw_template);
       var placeHolder = $(".modal-data");
 
-      $.get("./data/crossword.json",function(data,status,xhr){
+      // $.get("crossword.json",function(data,status,xhr){
             $.each(data,function(index,element){
                 console.log(data);
             
@@ -188,7 +195,7 @@ function getCrosswordTrivia() {
               // Render the posts into the page
               placeHolder.append(html);
             });
-      }); 
+      // }); 
 } 
 
 
@@ -219,6 +226,7 @@ function watercycle() {
     snap: '.droppable-widget', 
     snapMode: 'interior',
     cursor: 'move',
+    snapTolerance: 20,
     cursorAt: {top: 10, left: 100}
     });
 
@@ -229,7 +237,16 @@ function watercycle() {
           ui.draggable.append('<img class="watercycle-icon icon-correct" src="img/icons/icon-correct-green.svg" alt="correct icon">');
           ui.draggable.children(":nth-child(2)").addClass('hidden');
           ui.draggable.find('.icon-incorrect').remove();
+          ui.draggable.position({
+              my: "center",
+              at: "center",
+              of: $(this),
+              using: function(pos) {
+                $(this).animate(pos, 200, "linear");
+             }
+          });
           ui.draggable.draggable('option', 'disabled', true);
+
         } else {
           if (ui.draggable.find('img.icon-incorrect').length !=0) {
             // do nothing
@@ -267,4 +284,44 @@ function pollution() {
     $(this).addClass('hidden');
     $('.pollution-container').find('.clean-element[data-element="' + pollutionNumber + '"]' ).removeClass('hidden').addClass('animated fadeIn');
   });
+}
+
+
+var filenameID;
+function getFilenameID() {
+    window.kp_requestKioskId("kp_requestKioskId_callback"); 
+}
+function kp_requestKioskId_callback(kioskId) {
+  filenameID = kioskId.split(" ").join("");
+}
+
+saveCSV();
+
+function saveCSV() {
+  $('.continue-btn-game-3').click(function() {
+    var wasteWater1 = document.getElementsByName('wasteWater_1')[0].value;
+    var wasteWater2 = document.getElementsByName('wasteWater_2')[0].value;
+    var wasteWater3 = document.getElementsByName('wasteWater_3')[0].value;
+    var cleanWater1 = document.getElementsByName('cleanWater_1')[0].value;
+    var cleanWater2 = document.getElementsByName('cleanWater_2')[0].value;
+    var cleanWater3 = document.getElementsByName('cleanWater_3')[0].value;
+    var drinkingWater1 = document.getElementsByName('drinkingWater_1')[0].value;
+    var drinkingWater2 = document.getElementsByName('drinkingWater_2')[0].value;
+    var drinkingWater3 = document.getElementsByName('drinkingWater_3')[0].value;
+
+    getFilenameID();
+
+    writeToFile(filenameID + '.csv', new Date() + ',' + wasteWater1 + ',' + wasteWater2 + ',' + wasteWater3 + ',' + cleanWater1 + ',' + cleanWater2 + ',' + cleanWater3 + ',' + drinkingWater1 + ',' + drinkingWater2 + ',' + drinkingWater3, "_writeToFile_Callback");
+
+
+  }); 
+}
+
+
+function _writeToFile_Callback(success) {
+  if (success) {
+    alert('The data was successfully added!');  
+  } else {
+    alert('Error adding the data');
+  }
 }
