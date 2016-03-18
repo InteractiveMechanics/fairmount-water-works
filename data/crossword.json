@@ -41,7 +41,7 @@
 			
 			"clueNumber": 6,
 			"question": "The _ _ _ _ of a stream is all the land that sheds water to that stream when it rains.",
-			"options": ["watershed", "environment", "habitat", "tributary"],
+			"options": ["habitat", "watershed", "environment", "tributary"],
 			"answer": "watershed"
 		},
 		{
@@ -74,7 +74,7 @@
 		{
 			"clueNumber": 11,
 			"question": "Today's underground sewers used to be natural _ _ _ _.",
-			"options": ["glaciers", "farmland", "forests", "streams"],
+			"options": ["streams", "tunnels", "springs", "caves"],
 			"answer": "streams"
 		}
 

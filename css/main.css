@@ -178,7 +178,7 @@ footer {
   overflow-y: visible; }
 
 .trivia-modal-container {
-  top: 100px;
+  top: 150px;
   left: 290px;
   z-index: 2000;
   position: absolute; }
@@ -306,9 +306,7 @@ footer {
 
 .game-btn-waiting:hover {
   background-color: white;
-  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.9);
-  -webkit-animation: rubberBand 1s;
-  animation: rubberBand 1s; }
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.9); }
 
 .game-btn-complete {
   background-color: #00a550; }
@@ -362,7 +360,8 @@ footer {
   background-image: url(../img/progress/progress-04@2x.png); }
 
 .progress-meter[data-score="5"] {
-  background-image: url(../img/progress/progress-05@2x.png); }
+  background-image: url(../img/progress/progress-05@2x.png);
+  animation: tada 1s; }
 
 body {
   width: 1024px;
@@ -390,7 +389,8 @@ body {
     margin-top: 0;
     font-size: 32px; }
   .crossword-header p {
-    font-style: italic; }
+    font-style: italic;
+    font-size: 18px; }
   .crossword-header .page-title {
     display: inline-block;
     margin-left: 20px; }
@@ -548,7 +548,7 @@ body {
   height: 768px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../img/background-activity-02@2x.png); }
+  background-image: url(../img/background-activity-watercycle@2x.png); }
 
 .watercycle-header {
   position: absolute;
@@ -564,7 +564,8 @@ body {
     margin-top: 0;
     font-size: 32px; }
   .watercycle-header p {
-    font-style: italic; }
+    font-style: italic;
+    font-size: 18px; }
   .watercycle-header .page-title {
     display: inline-block;
     margin-left: 20px; }
@@ -646,7 +647,7 @@ body {
 
 .droppable-widget[data-vocab="7"] {
   bottom: 123px;
-  right: 230px; }
+  right: 257px; }
 
 .testing {
   background-color: #ff0055; }
@@ -682,7 +683,8 @@ body {
     margin-top: 0;
     font-size: 32px; }
   .wateruse-header p {
-    font-style: italic; }
+    font-style: italic;
+    font-size: 18px; }
   .wateruse-header .page-title {
     display: inline-block;
     margin-left: 20px; }
@@ -750,7 +752,8 @@ body {
     margin-top: 0;
     font-size: 32px; }
   .waterwheel-header p {
-    font-style: italic; }
+    font-style: italic;
+    font-size: 18px; }
   .waterwheel-header .page-title {
     display: inline-block;
     margin-left: 20px; }
@@ -772,7 +775,7 @@ body {
 
 .waterwheel-button {
   position: absolute;
-  bottom: 50%;
+  bottom: 346px;
   left: 262px;
   text-transform: uppercase;
   background-color: #1b75bb;
@@ -815,7 +818,8 @@ body {
     margin-top: 0;
     font-size: 32px; }
   .pollution-header p {
-    font-style: italic; }
+    font-style: italic;
+    font-size: 18px; }
   .pollution-header .page-title {
     display: inline-block;
     margin-left: 20px; }
