@@ -30,6 +30,9 @@ a {
   a:hover {
     text-decoration: none; }
 
+body {
+  animation: fadeIn 1.15s 1 forwards; }
+
 .page-icon {
   height: 80px;
   width: 80px;
@@ -49,6 +52,9 @@ h1, h2, h3 {
 h4, h5, h6, p {
   font-family: "opensans_regular", Helvetica, Arial, sans-serif; }
 
+footer {
+  position: relative; }
+
 .game-footer {
   border-radius: 30px;
   font-size: 18px;
@@ -62,6 +68,42 @@ h4, h5, h6, p {
     color: #f1f2f2;
     transition: all 0.25s ease-in-out; }
     .game-footer:hover .right-arrow {
+      fill: #f1f2f2; }
+
+.game-footer-crossword {
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 8px 17px;
+  border: 3px solid #212121;
+  color: #212121;
+  float: right;
+  font-family: "bebas", Helvetica, Arial, sans-serif; }
+  .game-footer-crossword .right-arrow {
+    fill: #212121; }
+  .game-footer-crossword:hover {
+    border: 2px solid #212121;
+    background-color: #212121;
+    color: #f1f2f2;
+    animation: pulse 0.5s; }
+    .game-footer-crossword:hover .right-arrow {
+      fill: #f1f2f2; }
+
+.game-footer-waterwheel {
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 8px 17px;
+  border: 3px solid #777777;
+  color: #777777;
+  float: right;
+  font-family: "bebas", Helvetica, Arial, sans-serif; }
+  .game-footer-waterwheel .right-arrow {
+    fill: #777777; }
+  .game-footer-waterwheel:hover {
+    border: 2px solid #777777;
+    background-color: #777777;
+    color: #f1f2f2;
+    animation: pulse 0.5s; }
+    .game-footer-waterwheel:hover .right-arrow {
       fill: #f1f2f2; }
 
 .modal-content-intro, .modal-content-completion {
@@ -192,16 +234,18 @@ h4, h5, h6, p {
   border-radius: 4px; }
 
 .btn-group-vertical > .btn {
-  width: 320px; }
+  width: 350px; }
 
 .modal-trivia-button {
   margin-top: 7px;
   margin-bottom: 7px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   text-transform: uppercase;
   font-size: 18px;
-  color: #1b75bb; }
+  color: #1b75bb;
+  font-family: "opensans_regular", Helvetica, Arial, sans-serif;
+  letter-spacing: 2px; }
 
 .modal-trivia-next-button {
   display: block;
@@ -238,11 +282,15 @@ h4, h5, h6, p {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1500; }
+  z-index: 1500;
+  padding: 25px;
+  color: transparent;
+  background-color: transparent;
+  border-color: transparent; }
 
 .homepage-game-icon, .homepage-complete-icon {
-  width: 57px;
-  position: fixed; }
+  width: 55px;
+  position: absolute; }
 
 .homepage-complete-icon {
   opacity: 0.8; }
@@ -253,85 +301,50 @@ h4, h5, h6, p {
   border-radius: 50%;
   box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.5);
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   transition: all 0.25s ease-in-out; }
 
 .game-btn-waiting:hover {
   background-color: white;
-  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.9); }
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.9);
+  -webkit-animation: rubberBand 1s;
+  animation: rubberBand 1s; }
 
 .game-btn-complete {
-  background-color: green; }
-  .game-btn-complete:hover {
-    background-color: white;
-    color: green;
-    border: 2px solid green; }
+  background-color: #00a550; }
 
 .btn-1 {
-  top: 370;
-  right: 150; }
-  .btn-1 .homepage-game-icon {
-    top: 370;
-    right: 150; }
-  .btn-1 .homepage-complete-icon {
-    top: 370;
-    right: 150; }
+  top: 271;
+  left: 73; }
 
 .btn-2 {
-  top: 370;
-  right: 267; }
-  .btn-2 .homepage-game-icon {
-    top: 370;
-    right: 267; }
-  .btn-2 .homepage-complete-icon {
-    top: 370;
-    right: 267; }
+  top: 340;
+  left: 215; }
 
 .btn-3 {
-  top: 370;
-  right: 450; }
-  .btn-3 .homepage-game-icon {
-    top: 370;
-    right: 450; }
-  .btn-3 .homepage-complete-icon {
-    top: 370;
-    right: 450; }
+  top: 297;
+  left: 353; }
 
 .btn-4 {
-  top: 315;
-  left: 350; }
-  .btn-4 .homepage-game-icon {
-    top: 315;
-    left: 350; }
-  .btn-4 .homepage-complete-icon {
-    top: 315;
-    left: 350; }
+  top: 481;
+  right: 104; }
 
 .btn-5 {
-  top: 220;
-  left: 200; }
-  .btn-5 .homepage-game-icon {
-    top: 220;
-    left: 200; }
-  .btn-5 .homepage-complete-icon {
-    top: 220;
-    left: 200; }
+  top: 328;
+  right: 410; }
 
 .progress-meter {
-  height: 75px;
-  width: 75px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   position: absolute;
-  bottom: 50px;
-  left: 50px;
-  background-size: 75px 75px;
+  bottom: 20px;
+  left: 20px;
+  background-size: 150px 150px;
   background-position: center center; }
 
 .progress-meter-icon {
-  width: 75px; }
+  width: 150px; }
 
 .progress-meter[data-score="0"] {
   background-image: url(../img/progress/progress-00@2x.png); }
@@ -357,11 +370,11 @@ body {
 
 .crossword-container {
   position: relative;
-  background-image: url(../img/activity-01-background@2x.jpg);
   background-size: 1024px 768px;
   height: 768px;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  background-image: url(../img/background-activity-01@2x.png); }
 
 .crossword-header {
   position: absolute;
@@ -381,11 +394,17 @@ body {
   .crossword-header .page-title {
     display: inline-block;
     margin-left: 20px; }
+  .crossword-header .homepage-page-title {
+    display: inline-block;
+    padding-top: 15px; }
 
 .crossword-footer {
   position: absolute;
   bottom: 40px;
-  right: 10px; }
+  right: 20px; }
+
+.crossword-clue-container-across {
+  margin-right: 7px; }
 
 .crosswordModal {
   position: absolute;
@@ -395,7 +414,7 @@ body {
 .crossword-clue-1 {
   position: absolute;
   top: 101px;
-  right: 319px; }
+  right: 322px; }
 
 .crossword-clue-2 {
   position: absolute;
@@ -405,46 +424,46 @@ body {
 .crossword-clue-3 {
   position: absolute;
   top: 191px;
-  left: 186px; }
+  left: 188px; }
 
 .crossword-clue-4 {
   position: absolute;
   top: 191px;
-  right: 455px; }
+  right: 457px; }
 
 .crossword-clue-5 {
   position: absolute;
   top: 236px;
-  left: 369px; }
+  left: 365px; }
 
 .crossword-clue-6 {
   position: absolute;
   top: 281px;
-  left: 309px; }
+  left: 310px; }
 
 .crossword-clue-7 {
   position: absolute;
   top: 281px;
-  left: 457px; }
+  left: 455px; }
 
 .crossword-clue-8 {
   position: absolute;
   top: 371px;
-  left: 179px; }
+  left: 177px; }
 
 .crossword-clue-9 {
   position: absolute;
   top: 371px;
-  right: 278px; }
+  right: 269px; }
 
 .crossword-clue-10 {
   position: absolute;
-  left: 98px;
+  left: 87px;
   bottom: 138px; }
 
 .crossword-clue-11 {
   position: absolute;
-  right: 177px;
+  right: 179px;
   top: 596px; }
 
 .crossword-down {
@@ -454,8 +473,9 @@ body {
   font-size: 24px;
   text-align: center;
   text-transform: uppercase;
-  display: inline;
-  margin: 13px;
+  display: inline-block;
+  margin: 0px;
+  width: 41px;
   padding: 0; }
 
 .crossword-letter-down {
@@ -465,9 +485,6 @@ body {
   padding: 0;
   margin: 0;
   height: 45px; }
-
-.modal-data {
-  visibility: hidden; }
 
 .answer {
   visibility: hidden; }
@@ -487,6 +504,8 @@ body {
 .tooltip {
   font-size: 18px;
   font-family: "opensans_regular", Helvetica, Arial, sans-serif; }
+  .tooltip:hover {
+    animation: pulse 1s; }
 
 .tooltip.right .tooltip-arrow {
   top: 50% !important; }
@@ -509,13 +528,27 @@ body {
 .shared-letter {
   color: transparent; }
 
-.watercycle-container {
-  height: 768px;
+.trivia-icon {
+  width: 15px;
+  position: absolute;
+  right: 15px;
+  margin-top: 3px; }
+
+.wide-letter {
   position: relative;
-  background-image: url(../img/background-activity-02@2x.png);
+  left: 3px; }
+
+.adjustment1 {
+  position: relative;
+  left: 2px; }
+
+.watercycle-container {
+  position: relative;
   background-size: 1024px 768px;
+  height: 768px;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  background-image: url(../img/background-activity-02@2x.png); }
 
 .watercycle-header {
   position: absolute;
@@ -535,11 +568,14 @@ body {
   .watercycle-header .page-title {
     display: inline-block;
     margin-left: 20px; }
+  .watercycle-header .homepage-page-title {
+    display: inline-block;
+    padding-top: 15px; }
 
 .watercycle-footer {
   position: absolute;
   bottom: 25px;
-  right: 35px; }
+  right: 20px; }
 
 .draggable-widget {
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
@@ -625,12 +661,12 @@ body {
   visibility: hidden; }
 
 .wateruse-container {
-  height: 768px;
   position: relative;
   background-size: 1024px 768px;
-  background-image: url(../img/background-activity-03@2x.png);
+  height: 768px;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  background-image: url(../img/background-activity-03@2x.png); }
 
 .wateruse-header {
   position: absolute;
@@ -650,11 +686,14 @@ body {
   .wateruse-header .page-title {
     display: inline-block;
     margin-left: 20px; }
+  .wateruse-header .homepage-page-title {
+    display: inline-block;
+    padding-top: 15px; }
 
 .wateruse-footer {
   position: absolute;
-  bottom: 75px;
-  right: 35px; }
+  bottom: 40px;
+  right: 20px; }
 
 .wateruse-form {
   width: 275px;
@@ -690,12 +729,11 @@ body {
   right: 50px; }
 
 .waterwheel-container {
-  height: 768px;
   position: relative;
   background-size: 1024px 768px;
+  height: 768px;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #777777; }
+  background-position: center center; }
 
 .waterwheel-header {
   position: absolute;
@@ -716,11 +754,14 @@ body {
   .waterwheel-header .page-title {
     display: inline-block;
     margin-left: 20px; }
+  .waterwheel-header .homepage-page-title {
+    display: inline-block;
+    padding-top: 15px; }
 
 .waterwheel-footer {
   position: absolute;
   bottom: 25px;
-  right: 35px; }
+  right: 25px; }
 
 .video-poster {
   width: 1024px;
@@ -732,7 +773,7 @@ body {
 .waterwheel-button {
   position: absolute;
   bottom: 50%;
-  left: 20%;
+  left: 262px;
   text-transform: uppercase;
   background-color: #1b75bb;
   padding: 15px 20px;
@@ -753,12 +794,12 @@ body {
   fill: #f1f2f2; }
 
 .pollution-container {
-  height: 768px;
   position: relative;
   background-size: 1024px 768px;
-  background-image: url(../img/background-activity-05@2x.png);
+  height: 768px;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  background-image: url(../img/background-activity-05@2x.png); }
 
 .pollution-header {
   position: absolute;
@@ -778,11 +819,14 @@ body {
   .pollution-header .page-title {
     display: inline-block;
     margin-left: 20px; }
+  .pollution-header .homepage-page-title {
+    display: inline-block;
+    padding-top: 15px; }
 
 .pollution-footer {
   position: absolute;
-  bottom: 75px;
-  right: 35px; }
+  bottom: 40px;
+  right: 20px; }
 
 .pollution-element, .clean-element {
   position: absolute; }

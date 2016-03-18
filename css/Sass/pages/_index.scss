@@ -6,7 +6,6 @@
 	height: 100%;
 	background-repeat: no-repeat;
 	background-position: center center;
-
 }
 
 .magic-button {
@@ -14,14 +13,18 @@
 	top: 0;
 	right: 0;
 	z-index: 1500;
+	padding: 25px;
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 
 
 // map buttons
 .homepage-game-icon, .homepage-complete-icon {
-	width: 57px;
-	position: fixed;
+	width: 55px;
+	position: absolute;
 }
 
 .homepage-complete-icon {
@@ -34,9 +37,6 @@
 	border-radius: 50%;
 	box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.50);
 	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	position: absolute;
 	transition: $transition;
 }
@@ -45,98 +45,54 @@
 	&:hover {
 		background-color: white;
 		box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.90);
-	}
+		-webkit-animation: rubberBand 1s;
+    	animation: rubberBand 1s;
+	 }
 }
 
 .game-btn-complete {
-	background-color: green;
-	&:hover {
-		background-color: white;
-		color: green;
-		border: 2px solid green;
-	}
+	background-color: $green;
 }
 
 .btn-1 {
-	top: 370;
-	right: 150;	
-	.homepage-game-icon {
-		top: 370;
-		right: 150;
-	}
-	.homepage-complete-icon {
-		top: 370;
-		right: 150;
-	}
+	top: 271;
+	left: 73;	
 }
 
 
 .btn-2 {
-	top: 370;
-	right: 267;
-	.homepage-game-icon {
-		top: 370;
-		right: 267;
-	}
-	.homepage-complete-icon {
-		top: 370;
-		right: 267;
-	}
+	top: 340;
+	left: 215;
 }
 
 .btn-3 {
-	top: 370;
-	right: 450;
-	.homepage-game-icon {
-		top: 370;
-		right: 450;
-	}
-	.homepage-complete-icon {
-		top: 370;
-		right: 450;
-	}
+	top: 297;
+	left: 353;
 }
 
 .btn-4 {
-	top: 315;
-	left: 350;
-	.homepage-game-icon {
-		top: 315;
-		left: 350;
-	}
-	.homepage-complete-icon {
-		top: 315;
-		left: 350;
-	}
-
+	top: 481;
+	right: 104;
 }
 
 .btn-5 {
-	top: 220;
-	left: 200;
-	.homepage-game-icon {
-		top: 220;
-		left: 200;
-	}
-	.homepage-complete-icon {
-		top: 220;
-		left: 200;
-	}
+	top: 328;
+	right: 410;
 }
 
 .progress-meter {
-	height: 75px;
-	width: 75px;
+	height: 150px;
+	width: 150px;
 	border-radius: 50%;
 	position: absolute;
-	bottom: 50px;
-	left: 50px;
-	background-size: 75px 75px;
+	bottom: 20px;
+	left: 20px;
+	background-size: 150px 150px;
 	background-position: center center;
 }
 
 .progress-meter-icon {
-	width: 75px;
+	width: 150px;
 }
 
 .progress-meter[data-score="0"] {

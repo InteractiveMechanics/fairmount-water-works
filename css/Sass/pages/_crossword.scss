@@ -4,24 +4,23 @@ body {
 }
 
 .crossword-container {
-	position: relative;
-	background-image: url(../img/activity-01-background@2x.jpg);
-	background-size: 1024px 768px;	
-	height: 768px;
-	background-repeat: no-repeat;
-	background-position: center center;
+	@include game-container();
+	background-image: url(../img/background-activity-01@2x.png);
 }
 
 .crossword-header {
 	@include game-header();
 }
 
-
-
 .crossword-footer {
 	position: absolute;
 	bottom: 40px;
-	right: 10px;	
+	right: 20px;	
+}
+
+.crossword-clue-container-across {
+	margin-right: 7px;
+	//margin-left: 4px;
 }
 
 
@@ -34,7 +33,7 @@ body {
 .crossword-clue-1 {
 	position: absolute;
 	top: 101px;
-	right: 319px;
+	right: 322px;
 }
 
 .crossword-clue-2 {
@@ -47,54 +46,54 @@ body {
 .crossword-clue-3 {
 	position: absolute;
 	top: 191px;
-	left: 186px;
+	left: 188px;
 }
 
 .crossword-clue-4 {
 	position: absolute;
 	top: 191px;
-	right: 455px;
+	right: 457px;
 }
 
 .crossword-clue-5 {
 	position: absolute;
 	top: 236px;
-	left: 369px;
+	left: 365px;
 }
 
 .crossword-clue-6 {
 	position: absolute;
 	top: 281px;
-	left: 309px;
+	left: 310px;
 }
 
 .crossword-clue-7 {
 	position: absolute;
 	top: 281px;
-	left: 457px;
+	left: 455px;
 }
 
 .crossword-clue-8 {
 	position: absolute;
 	top: 371px;
-	left: 179px;
+	left: 177px;
 }
 
 .crossword-clue-9 {
 	position: absolute;
 	top: 371px;
-	right: 278px;
+	right: 269px;
 }
 
 .crossword-clue-10 {
 	position: absolute;
-	left: 98px;
+	left: 87px;
 	bottom: 138px;
 }
 
 .crossword-clue-11 {
 	position: absolute;
-	right: 177px;
+	right: 179px;
 	top: 596px;
 }
 
@@ -105,8 +104,9 @@ body {
 
 .crossword-letter-across {
 	@include crossword-letter;
-	display: inline;
-	margin: 13px;
+	display: inline-block;
+	margin: 0px;
+	width: 41px; //try doing this to make the spacing between characters even
 	padding: 0;
 }
 
@@ -117,9 +117,9 @@ body {
 	height: 45px;
 }
 
-.modal-data {
-	visibility: hidden;
-}
+// .modal-data {
+// 	visibility: hidden;
+// }
 
 .answer {
 	visibility: hidden;
@@ -144,6 +144,9 @@ body {
 .tooltip {
 	font-size: 18px;
 	font-family: $opensans_regular;
+	&:hover {
+		animation: pulse 1s;
+	}
 }
 
 .tooltip.right .tooltip-arrow {
@@ -173,3 +176,21 @@ body {
 .shared-letter{
 	color: transparent;
 }
+
+.trivia-icon {
+	width: 15px;
+	position: absolute;
+	right: 15px;
+	margin-top: 3px;
+}
+
+.wide-letter {
+	position: relative;
+	left: 3px;
+}
+
+.adjustment1 {
+	position: relative;
+	left: 2px;
+}
+

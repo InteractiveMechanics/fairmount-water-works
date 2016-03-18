@@ -1,11 +1,6 @@
 .waterwheel-container {
-	height: 768px;
-	position: relative;
+	@include game-container();
 	//background-image: url(../img/background-activity-04@2x.png);
-	background-size: 1024px 768px;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #777777;
 }
 
 .waterwheel-header {
@@ -16,7 +11,7 @@
 .waterwheel-footer {
 	position: absolute;
 	bottom: 25px;
-	right: 35px;
+	right: 25px;
 }
 
 .video-poster {
@@ -35,7 +30,7 @@
 .waterwheel-button {
 	position: absolute;
 	bottom: 50%;
-	left: 20%;
+	left: 262px;
 	text-transform: uppercase;
 	background-color: $blue;
 	padding: 15px 20px;

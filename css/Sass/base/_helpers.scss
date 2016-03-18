@@ -10,6 +10,11 @@ a {
 	}
 }
 
+body {
+	animation: fadeIn 1.15s 1 forwards;
+
+}
+
 .page-icon {
 	height: 80px;
 	width: 80px;
@@ -33,3 +38,6 @@ h4, h5, h6, p {
 	font-family: $opensans_regular;
 }
 
+footer {
+	position: relative;
+}

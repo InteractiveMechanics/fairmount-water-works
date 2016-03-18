@@ -1,10 +1,6 @@
 .wateruse-container {
-	height: 768px;
-	position: relative;
-	background-size: 1024px 768px;
+	@include game-container();
 	background-image: url(../img/background-activity-03@2x.png);
-	background-repeat: no-repeat;
-	background-position: center center;
 }
 
 .wateruse-header {
@@ -13,8 +9,8 @@
 
 .wateruse-footer {
 	position: absolute;
-	bottom: 75px;
-	right: 35px;
+	bottom: 40px;
+	right: 20px;
 }
 
 .wateruse-form {
