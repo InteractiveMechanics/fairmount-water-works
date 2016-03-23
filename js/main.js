@@ -1,5 +1,88 @@
 
-var data = {"trivia":[{"clueNumber":1,"question":"The cutting down of too many trees in the Schuykill River Watershed led to the  1869 _ _ _ _.","options":["war","flood","draught","storm"],"answer":"flood"},{"clueNumber":2,"question":"The Schuykill River Watershed is part of this larger River Basin.","options":["Mississippi","Missouri","Delaware","Nile"],"answer":"Delaware"},{"clueNumber":3,"question":"Twice a day the river levels are high and low because of these.","options":["boats","tides","wells","fossil fuels"],"answer":"tides"},{"clueNumber":4,"question":"In 1876, these held water where the Philadelphia Museum of Art stands today.","options":["reservoirs","storehouses","catchments","watertowers"],"answer":"reservoirs"},{"clueNumber":5,"question":"This park helps protect the city's water supply.","options":["Rittenhouse","Clark","Franklin","Fairmount"],"answer":"Fairmount"},{"clueNumber":6,"question":"The _ _ _ _ of a stream is all the land that sheds water to that stream when it rains.","options":["habitat","watershed","environment","tributary"],"answer":"watershed"},{"clueNumber":7,"question":"Where the river meets the sea.","options":["lagoon","estuary","marsh","harbor"],"answer":"estuary"},{"clueNumber":8,"question":"Three thousand miles of these underground pipes carry waste.","options":["sewer","drain","gas","organ"],"answer":"sewer"},{"clueNumber":9,"question":"Rain that goes down the storm drain can end up in the _ _ _ _.","options":["ocean","sewer","floodplain","river"],"answer":"river"},{"clueNumber":10,"question":"A healthy Delaware Estuary provides a unique _ _ _ _ for wildlife, such as horseshoe crab and migratory birds.","options":["home","watershed","habitat","climate"],"answer":"habitat"},{"clueNumber":11,"question":"Today's underground sewers used to be natural _ _ _ _.","options":["streams","tunnels","springs","caves"],"answer":"streams"}]};
+var data = { "trivia": [
+
+		{
+			
+			"clueNumber": 1,
+			"question": "The cutting down of too many trees in the Schuykill River Watershed led to the  1869 _ _ _ _.",
+			"options": ["flood", "fire", "drought", "riots"],
+			"answer": "flood"
+		},
+		{
+			
+			"clueNumber": 2,
+			"question": "The Schuykill River Watershed is part of this larger River Basin.",
+			"options": ["Philadelphia", "Mississippi", "Delaware", "New Jersey"],
+			"answer": "Delaware"
+		},
+		{
+			
+			"clueNumber": 3,
+			"question": "Twice a day the river levels are high and low because of these.",
+			"options": ["tides", "trash", "boats", "wells"],
+			"answer": "tides"
+		},
+
+		{
+			
+			"clueNumber": 4,
+			"question": "In 1876, these held water where the Philadelphia Museum of Art stands today.",
+			"options": ["reservoirs", "storehouses", "catchments", "watertowers"],
+			"answer": "reservoirs"
+		},
+
+		{
+			
+			"clueNumber": 5,
+			"question": "This park helps protect the city's water supply.",
+			"options": ["Franklin", "Fairmount", "Rittenhouse", "Central"],
+			"answer": "Fairmount"
+		},
+		{
+			
+			"clueNumber": 6,
+			"question": "The _ _ _ _ of a stream is all the land that sheds water to that stream when it rains.",
+			"options": ["habitat", "watershed", "environment", "tributary"],
+			"answer": "watershed"
+		},
+		{
+			
+			"clueNumber": 7,
+			"question": "Where the river meets the sea.",
+			"options": ["lagoon", "estuary", "marsh", "island"],
+			"answer": "estuary"
+		},
+		{
+			
+			"clueNumber": 8,
+			"question": "Three thousand miles of these underground pipes carry waste.",
+			"options": ["sewer", "drain", "sinks", "subway"],
+			"answer": "sewer"
+		},
+		{
+			
+			"clueNumber": 9,
+			"question": "Rain that goes down the storm drain can end up in the _ _ _ _.",
+			"options": ["mountain", "valley", "shopping mall", "river"],
+			"answer": "river"
+		},
+		{
+			"clueNumber": 10,
+			"question": "A healthy Delaware Estuary provides a unique _ _ _ _ for wildlife, such as horseshoe crab and migratory birds.",
+			"options": ["climate", "watershed", "habitat", "office"],
+			"answer": "habitat"
+		},
+		{
+			"clueNumber": 11,
+			"question": "Today's underground sewers used to be natural _ _ _ _.",
+			"options": ["streams", "tunnels", "springs", "caves"],
+			"answer": "streams"
+		}
+
+
+	]
+
+};
      
 $(document).ready(function(event) {
     //homepage
