@@ -190,7 +190,7 @@ footer {
   margin: 0; }
 
 .modal-trivia-content {
-  background-color: #1b75bb;
+  background-color: rgba(27, 117, 187, 0.7);
   color: #f1f2f2;
   border-radius: 0px;
   padding: 30px 50px;
