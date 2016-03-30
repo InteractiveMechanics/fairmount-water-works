@@ -6,12 +6,17 @@
 .trivia-modal-container {
 	top: 150px;
 	left: 290px;
+	width: 450px;
 	z-index: 2000;
 	position: absolute;
 }
 
 .modal-backdrop {
    background-color: $black;
+}
+
+.modal-backdrop.in {
+	z-index: 1999;
 }
 
 .modal-trivia-dialog {

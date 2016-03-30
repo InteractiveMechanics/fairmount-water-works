@@ -236,10 +236,14 @@ function crosswordModal() {
 
   //crossword modal shows when user clicks on tooltip
     $('[role=tooltip]').click(function(event) {
-        var clue = $(this)[0].textContent;
-        $('.modal-content').html($('.clue-' + clue).html());
-        $(this).attr('data-toggle', 'modal').attr('data-target', '#crosswordModal');
-        $(this).addClass('disabled');
+        if ($(this).hasClass('answered')) {
+          $(this).attr('data-toggle', '').attr('data-target', '');
+        } else {
+          var clue = $(this)[0].textContent;
+          $('.modal-content').html($('.clue-' + clue).html());
+          $(this).attr('data-toggle', 'modal').attr('data-target', '#crosswordModal');
+          $(this).addClass('answered');
+        } 
     });
 }
 
