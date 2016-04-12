@@ -187,7 +187,7 @@ footer {
 .modal-backdrop {
   background-color: #212121; }
 
-.modal-backdrop.in {
+.crossword-page .modal-backdrop.in {
   z-index: 1999; }
 
 .modal-trivia-dialog {
@@ -286,7 +286,7 @@ footer {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1500;
+  z-index: 2001;
   padding: 25px;
   color: transparent;
   background-color: transparent;

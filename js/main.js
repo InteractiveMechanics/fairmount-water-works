@@ -353,7 +353,7 @@ function waterwheel() {
       $(this).addClass('hidden');
       $('#myVideo').get(0).play();
       $('.waterwheel-header').addClass('hidden');
-      $('.continue-btn-game-4').removeClass('hidden');
+      $('.continue-btn-game-5').removeClass('hidden');
   });
 
   // waterwheel on touch devices
@@ -361,7 +361,7 @@ function waterwheel() {
       $(this).addClass('hidden');
       $('#myVideo').get(0).play();
       $('.waterwheel-header').addClass('hidden');
-      $('.continue-btn-game-4').removeClass('hidden');
+      $('.continue-btn-game-5').removeClass('hidden');
   });
 }
 

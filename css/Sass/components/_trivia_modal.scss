@@ -15,9 +15,12 @@
    background-color: $black;
 }
 
-.modal-backdrop.in {
-	z-index: 1999;
+.crossword-page {
+	.modal-backdrop.in {
+		z-index: 1999;
+	}
 }
+
 
 .modal-trivia-dialog {
 	margin: 0;
